@@ -1,17 +1,19 @@
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import { GridPattern } from "../ui/grid-pattern";
 import { cn } from "@/lib/utils";
 import { Spotlight } from "../ui/spotlight";
+import { ContainerTextFlip } from "../ui/container-text-flip";
+import { AnimatedShinyText } from "../ui/animated-shiny-text";
+import { Highlighter } from "../ui/highlighter";
 
 export default function Hero() {
 	return (
 		<section className="flex items-center justify-center overflow-hidden py-10 pt-30 relative">
 			<Spotlight
-				className="left-0 -top-10 md:-top-30 xl:-left-120 xl:-top-120 opacity-70 z-100"
-				fill="gold"
+				className="left-0 -top-10 md:-top-30 xl:-top-10"
+				fill="#ffd24a"
 			/>
 			<GridPattern
 				width={60}
@@ -23,20 +25,23 @@ export default function Hero() {
 			/>
 			<div className="max-w-(--breakpoint-xl) w-full mx-auto grid lg:grid-cols-2 gap-12 px-6 py-12 lg:py-0 z-0">
 				<div className="my-auto">
-					<Badge
-						variant="secondary"
-						className="rounded-full py-1 border-border"
-						asChild
+					<div
+						className={cn(
+							"group rounded-full w-max border border-black/5 bg-neutral-100 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-900 dark:hover:bg-neutral-800"
+						)}
 					>
-						<Link href="#">
-							Just relased JackFruit <ArrowUpRight className="ml-1 size-4" />
-						</Link>
-					</Badge>
+						<AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
+							<span>✨ Just Released JackFruit</span>
+							<ArrowUpRight className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
+						</AnimatedShinyText>
+					</div>
 					<h1 className="mt-6 max-w-[17ch] text-4xl md:text-5xl lg:text-[2.75rem] xl:text-7xl font-semibold leading-[1.2]! tracking-tighter">
-						Build Smarter{" "}
-						<span className="text-5xl lg:text-8xl font-bold bg-linear-to-tl from-primary to-white bg-clip-text text-transparent">
-							Softwares
-						</span>
+						Build <ContainerTextFlip words={["better", "modern", "smarter"]} />{" "}
+						<Highlighter action="underline" color="#ffd24a">
+							<span className="text-5xl lg:text-8xl font-bold bg-linear-to-br from-primary to-white bg-clip-text text-transparent">
+								Softwares
+							</span>
+						</Highlighter>
 						, Faster Than Ever
 					</h1>
 					<p className="mt-6 max-w-[60ch] text-lg">

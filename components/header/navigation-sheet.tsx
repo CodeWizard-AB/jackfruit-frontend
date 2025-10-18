@@ -14,7 +14,7 @@ export default function NavigationSheet() {
 			</SheetTrigger>
 			<SheetContent className="px-6 py-3">
 				<Logo />
-				<NavMenu orientation="vertical" className="mt-6 [&>div]:h-full" />
+				<NavMenu orientation="vertical" className="[&>div]:h-full" />
 			</SheetContent>
 		</Sheet>
 	);
