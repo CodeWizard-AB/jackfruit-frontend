@@ -19,7 +19,7 @@ export default function RootLayout({
 		<html lang="en">
 			<body className={`${font.className} antialiased dark`}>
 				<Navbar />
-				<main className="space-y-24">{children}</main>
+				<main className="space-y-10 lg:space-y-24">{children}</main>
 			</body>
 		</html>
 	);
