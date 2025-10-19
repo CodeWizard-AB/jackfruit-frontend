@@ -9,7 +9,7 @@ import { skills } from "@/lib/content";
 
 export default function TechSection() {
 	return (
-		<section className="container mx-auto">
+		<section className="container">
 			<SectionHeadline
 				title="Our Tech Stack"
 				description="Built with industry-leading technologies"
