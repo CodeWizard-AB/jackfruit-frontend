@@ -1,12 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight } from "lucide-react";
-import Link from "next/link";
 import { GridPattern } from "../ui/grid-pattern";
 import { cn } from "@/lib/utils";
 import { Spotlight } from "../ui/spotlight";
 import { ContainerTextFlip } from "../ui/container-text-flip";
 import { AnimatedShinyText } from "../ui/animated-shiny-text";
 import { Highlighter } from "../ui/highlighter";
+import { Separator } from "../ui/separator";
 
 export default function Hero() {
 	return (
@@ -49,11 +49,33 @@ export default function Hero() {
 						enterprises build intelligent, scalable, and design-driven solutions
 						that transform industries
 					</p>
-					<div className="mt-12 flex items-center gap-4">
+					<div className="mt-10 mb-10 flex items-center gap-4">
 						<Button size="lg" className="text-base">
 							Talk to an Expert
 							<ArrowUpRight className="h-5! w-5!" />
 						</Button>
+					</div>
+					<div className="flex items-center gap-8">
+						<div className="text-center group cursor-pointer">
+							<div className="text-3xl font-bold text-gold group-hover:scale-110 transition-transform">
+								500+
+							</div>
+							<div className="text-sm text-[#A0A0A0]">Projects Delivered</div>
+						</div>
+						<Separator orientation="vertical" className="h-12 bg-primary" />
+						<div className="text-center group cursor-pointer">
+							<div className="text-3xl font-bold text-gold group-hover:scale-110 transition-transform">
+								98%
+							</div>
+							<div className="text-sm text-[#A0A0A0]">Client Satisfaction</div>
+						</div>
+						<Separator orientation="vertical" className="h-12 bg-primary" />
+						<div className="text-center group cursor-pointer">
+							<div className="text-3xl font-bold text-gold group-hover:scale-110 transition-transform">
+								24/7
+							</div>
+							<div className="text-sm text-[#A0A0A0]">Support Available</div>
+						</div>
 					</div>
 				</div>
 				<div className="w-full aspect-video lg:aspect-auto lg:w-[1000px] lg:h-[calc(100vh-15rem)] bg-accent rounded-xl overflow-hidden border">
