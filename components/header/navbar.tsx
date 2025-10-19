@@ -28,8 +28,8 @@ export default function Navbar() {
 					: "bg-transparent"
 			)}
 		>
-			<nav className="h-24 max-w-(--breakpoint-xl) mx-auto">
-				<div className="h-full flex items-center justify-between mx-auto px-4">
+			<nav className="h-24 container">
+				<div className="h-full flex items-center justify-between mx-auto">
 					<Logo />
 					{/* Desktop Menu */}
 					<NavMenu className="hidden md:block" />

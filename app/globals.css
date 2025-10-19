@@ -75,18 +75,83 @@
 			transform: translateY(0);
 		}
 	}
-	--animate-shiny-text: shiny-text 8s infinite
+	--animate-shiny-text: shiny-text 8s infinite;
+	@keyframes shiny-text {
+		0%,
+		90%,
+		100% {
+			background-position: calc(-100% - var(--shiny-width)) 0;
+		}
+		30%,
+		60% {
+			background-position: calc(100% + var(--shiny-width)) 0;
+		}
+	}
+	@keyframes shiny-text {
+		0%,
+		90%,
+		100% {
+			background-position: calc(-100% - var(--shiny-width)) 0;
+		}
+		30%,
+		60% {
+			background-position: calc(100% + var(--shiny-width)) 0;
+		}
+	}
+	--animate-marquee: marquee var(--duration) infinite linear;
+	--animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
+	@keyframes marquee {
+		from {
+			transform: translateX(0);
+		}
+		to {
+			transform: translateX(calc(-100% - var(--gap)));
+		}
+	}
+	@keyframes marquee-vertical {
+		from {
+			transform: translateY(0);
+		}
+		to {
+			transform: translateY(calc(-100% - var(--gap)));
+		}
+	}
+	--animate-shine: shine var(--duration) infinite linear
 ;
-  @keyframes shiny-text {
-  0%, 90%, 100% {
-    background-position: calc(-100% - var(--shiny-width)) 0;}
-  30%, 60% {
-    background-position: calc(100% + var(--shiny-width)) 0;}}
-  @keyframes shiny-text {
-  0%, 90%, 100% {
-    background-position: calc(-100% - var(--shiny-width)) 0;}
-  30%, 60% {
-    background-position: calc(100% + var(--shiny-width)) 0;}}}
+  @keyframes shine {
+  0% {
+    background-position: 0% 0%;}
+  50% {
+    background-position: 100% 100%;}
+  to {
+    background-position: 0% 0%;}}
+  --animate-orbit: orbit calc(var(--duration)*1s) linear infinite;
+  @keyframes orbit {
+  0% {
+    transform: rotate(calc(var(--angle) * 1deg)) translateY(calc(var(--radius) * 1px)) rotate(calc(var(--angle) * -1deg));}
+  100% {
+    transform: rotate(calc(var(--angle) * 1deg + 360deg)) translateY(calc(var(--radius) * 1px)) rotate(calc((var(--angle) * -1deg) - 360deg));}}
+  --animate-background-position-spin: background-position-spin 3000ms infinite alternate;
+  @keyframes background-position-spin {
+  0% {
+    background-position: top center;}
+  100% {
+    background-position: bottom center;}}
+  @keyframes background-position-spin {
+  0% {
+    background-position: top center;}
+  100% {
+    background-position: bottom center;}}
+  @keyframes background-position-spin {
+  0% {
+    background-position: top center;}
+  100% {
+    background-position: bottom center;}}
+  @keyframes orbit {
+  0% {
+    transform: rotate(calc(var(--angle) * 1deg)) translateY(calc(var(--radius) * 1px)) rotate(calc(var(--angle) * -1deg));}
+  100% {
+    transform: rotate(calc(var(--angle) * 1deg + 360deg)) translateY(calc(var(--radius) * 1px)) rotate(calc((var(--angle) * -1deg) - 360deg));}}}
 
 :root {
 	--radius: 0.65rem;
@@ -130,7 +195,7 @@
 	--card-foreground: oklch(0.985 0 0);
 	--popover: oklch(0.21 0.006 285.885);
 	--popover-foreground: oklch(0.985 0 0);
-	--primary: #ffd24a;
+	--primary: rgb(255, 210, 74);
 	--primary-foreground: oklch(0.421 0.095 57.708);
 	--secondary: oklch(0.274 0.006 286.033);
 	--secondary-foreground: oklch(0.985 0 0);
@@ -144,7 +209,7 @@
 	--ring: oklch(0.554 0.135 66.442);
 	--chart-1: oklch(0.488 0.243 264.376);
 	--chart-2: oklch(0.696 0.17 162.48);
-	--chart-3: oklch(0.769 0.188 70.08);
+	--chart-3: #fe9a00;
 	--chart-4: oklch(0.627 0.265 303.9);
 	--chart-5: oklch(0.645 0.246 16.439);
 	--sidebar: oklch(0.21 0.006 285.885);
@@ -154,7 +219,7 @@
 	--sidebar-accent: oklch(0.274 0.006 286.033);
 	--sidebar-accent-foreground: oklch(0.985 0 0);
 	--sidebar-border: oklch(1 0 0 / 10%);
-	--sidebar-ring: oklch(0.554 0.135 66.442);	
+	--sidebar-ring: oklch(0.554 0.135 66.442);
 }
 
 @layer base {
@@ -166,6 +231,12 @@
 	}
 	button {
 		@apply cursor-pointer;
+	}
+}
+
+@layer utilities {
+	.container {
+		@apply max-w-(--breakpoint-xl) mx-auto;
 	}
 }
 

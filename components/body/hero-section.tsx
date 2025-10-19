@@ -8,7 +8,7 @@ import { AnimatedShinyText } from "../ui/animated-shiny-text";
 import { Highlighter } from "../ui/highlighter";
 import { Separator } from "../ui/separator";
 
-export default function Hero() {
+export default function HeroSection() {
 	return (
 		<section className="flex items-center justify-center overflow-hidden py-10 pt-30 relative">
 			<Spotlight
@@ -23,7 +23,7 @@ export default function Hero() {
 					"[mask-image:radial-gradient(600px_circle_at_center,white,transparent)] opacity-50 lg:opacity-100"
 				)}
 			/>
-			<div className="max-w-(--breakpoint-xl) w-full mx-auto grid lg:grid-cols-2 gap-12 px-6 py-12 lg:py-0 z-0">
+			<div className="container grid lg:grid-cols-2 gap-12 z-0">
 				<div className="my-auto">
 					<div
 						className={cn(
