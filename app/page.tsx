@@ -12,7 +12,6 @@ export default function Home() {
 			<ServiceSection />
 			<ChooseUsSection />
 			<FaqSection />
-			<div className="h-5"></div>
 		</>
 	);
 }

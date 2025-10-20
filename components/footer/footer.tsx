@@ -11,7 +11,7 @@ import { navItems } from "@/lib/content";
 
 export default function Footer() {
 	return (
-		<footer className="border-t">
+		<footer>
 			<div className="container">
 				<div className="py-12 flex flex-col justify-start items-center">
 					{/* Logo */}

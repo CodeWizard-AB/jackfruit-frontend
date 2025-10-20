@@ -36,7 +36,7 @@ export default function FaqSection() {
 										<AccordionPrimitive.Header className="flex">
 											<AccordionPrimitive.Trigger
 												className={cn(
-													"flex flex-1 items-center justify-between py-4 font-semibold transition-all hover:underline [&[data-state=open]>svg]:rotate-45",
+													"flex flex-1 items-center justify-between py-6 font-semibold transition-all hover:underline [&[data-state=open]>svg]:rotate-45",
 													"text-start text-lg"
 												)}
 											>
@@ -63,7 +63,7 @@ export default function FaqSection() {
 									<AccordionPrimitive.Header className="flex">
 										<AccordionPrimitive.Trigger
 											className={cn(
-												"flex flex-1 items-center justify-between py-4 font-semibold tracking-tight transition-all hover:underline [&[data-state=open]>svg]:rotate-45",
+												"flex flex-1 items-center justify-between py-6 font-semibold tracking-tight transition-all hover:underline [&[data-state=open]>svg]:rotate-45",
 												"text-start text-lg"
 											)}
 										>
