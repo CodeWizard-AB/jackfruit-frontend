@@ -3,25 +3,6 @@ import { Button } from "../ui/button";
 import SectionHeadline from "./section-headline";
 import Image from "next/image";
 
-const features = [
-	{
-		title: "Identify Opportunities",
-		description: "Find untapped areas to explore effortlessly.",
-	},
-	{
-		title: "Build Authority",
-		description: "Craft content that resonates and inspires trust.",
-	},
-	{
-		title: "Instant Insights",
-		description: "Get actionable insights instantly at a glance.",
-	},
-	{
-		title: "Instant Insights New",
-		description: "Get actionable insights instantly at a glance.",
-	},
-];
-
 export default function ServiceSection() {
 	return (
 		<section className="container flex items-center justify-center">
