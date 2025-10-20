@@ -59,7 +59,7 @@ export default function HeroSection() {
 							<ArrowUpRight className="h-5! w-5!" />
 						</Button>
 					</div>
-					<div className="flex items-center justify-center lg:justify-start gap-8">
+					<div className="flex items-center justify-center lg:justify-start lg:gap-8">
 						<div className="text-center group cursor-pointer">
 							<div className="text-3xl font-bold text-gold group-hover:scale-110 transition-transform">
 								500+
@@ -84,7 +84,7 @@ export default function HeroSection() {
 				</div>
 				<div className="w-full aspect-video lg:aspect-auto lg:w-[1000px] lg:h-[calc(100vh-15rem)] bg-accent rounded-xl overflow-hidden border relative">
 					<BorderBeam
-						size={500}
+						size={400}
 						borderWidth={2}
 						className="from-transparent via-primary to-transparent"
 					/>
