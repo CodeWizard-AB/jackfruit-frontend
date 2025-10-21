@@ -62,9 +62,9 @@ export default function HeroSection() {
 					<div className="flex items-center justify-center lg:justify-start lg:gap-8">
 						<div className="text-center group cursor-pointer">
 							<div className="text-3xl font-bold text-gold group-hover:scale-110 transition-transform">
-								500+
+								99%
 							</div>
-							<div className="text-sm text-[#A0A0A0]">Projects Delivered</div>
+							<div className="text-sm text-[#A0A0A0]">Faster Delivery</div>
 						</div>
 						<Separator orientation="vertical" className="h-12 bg-primary" />
 						<div className="text-center group cursor-pointer">
