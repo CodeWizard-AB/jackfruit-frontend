@@ -7,6 +7,14 @@ import {
 	Sparkles,
 	Server,
 	Handshake,
+	Phone,
+	Mail,
+	MapPin,
+	MessageSquare,
+	MessageCircle,
+	PhoneIcon,
+	MapPinIcon,
+	MailIcon,
 } from "lucide-react";
 
 export const navItems = [
@@ -295,5 +303,36 @@ export const features = [
 		description:
 			"We believe in premium design — crafting elegant digital products that feel as powerful as they look.",
 		icon: Sparkles,
+	},
+];
+
+export const contacts = [
+	{
+		title: "Live chat",
+		link: "https://wa.me/8801719000000",
+		icon: MessageCircle,
+		description: "Chat with us on WhatsApp",
+		details: "Start a conversation",
+	},
+	{
+		title: "Phone",
+		link: "tel:+8801719-000000",
+		icon: PhoneIcon,
+		description: "Monday-Friday from 8am to 5pm",
+		details: "+8801719-000000",
+	},
+	{
+		title: "Email",
+		link: "mailto:0BtYb@example.com",
+		description: "We would love to hear from you",
+		icon: MailIcon,
+		details: "0BtYb@example.com",
+	},
+	{
+		title: "Office",
+		link: "",
+		icon: MapPinIcon,
+		description: "Come say hello at our office HQ",
+		details: "New York, NY, USA",
 	},
 ];

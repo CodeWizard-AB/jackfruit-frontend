@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Zap } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 export default function CTASection() {
 	return (
@@ -7,7 +7,7 @@ export default function CTASection() {
 			<div className="max-w-4xl text-center mx-auto">
 				<h1 className="mb-6 text-4xl font-semibold leading-tight text-white md:text-5xl lg:text-6xl">
 					<span className="bg-linear-to-br from-primary to-white bg-clip-text text-transparent">
-						Let's Build the Future Together
+						Let&apos;s Build the Future Together
 					</span>
 				</h1>
 				<p className="mb-12">
