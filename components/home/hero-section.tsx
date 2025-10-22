@@ -98,10 +98,15 @@ export default function HeroSection() {
 						muted
 						loop
 						playsInline
+						preload="auto"
 					>
 						<source
 							src="https://ik.imagekit.io/xp2qigjdg/jackfruit-videos/video-3.mp4?updatedAt=1760752075294"
 							type="video/mp4"
+						/>
+						<source
+							src="https://ik.imagekit.io/xp2qigjdg/jackfruit-videos/video-3.webm/ik-video.mp4?updatedAt=1761146641881"
+							type="video/webm"
 						/>
 					</video>
 				</div>
