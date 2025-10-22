@@ -16,7 +16,7 @@ export default function TechSection() {
 			/>
 			<div className="grid lg:items-center lg:justify-center lg:grid-cols-2 grid-cols-1 lg:gap-12">
 				<CometCard>
-					<div className="relative rounded-xl">
+					<div className="relative rounded-xl w-full overflow-hidden">
 						<BorderBeam
 							size={500}
 							className="from-transparent via-primary to-transparent"
