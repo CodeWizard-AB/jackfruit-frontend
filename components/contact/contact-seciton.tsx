@@ -1,5 +1,6 @@
 import { contacts } from "@/lib/content";
 import ContactCard from "./contact-card";
+import ContactForm from "./contact-form";
 
 export default function ContactSection() {
 	return (
@@ -10,6 +11,7 @@ export default function ContactSection() {
 						<ContactCard key={props.title} {...props} />
 					))}
 				</div>
+				<ContactForm />
 			</div>
 		</section>
 	);

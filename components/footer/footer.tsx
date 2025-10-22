@@ -17,7 +17,7 @@ export default function Footer() {
 					{/* Logo */}
 					<Logo />
 
-					<ul className="mt-6 flex items-center gap-4 flex-wrap">
+					<ul className="flex items-center gap-4 flex-wrap">
 						{navItems.map(({ name, link }) => (
 							<li key={name}>
 								<Link
