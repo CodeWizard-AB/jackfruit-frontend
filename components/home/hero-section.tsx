@@ -37,20 +37,20 @@ export default function HeroSection() {
 						</AnimatedShinyText>
 					</div>
 					<h1 className="mt-6 text-4xl md:text-5xl lg:text-[2.75rem] xl:text-7xl font-semibold leading-[1.2]! tracking-tighter">
-						<span className="block">
-							Build{" "}
-							<ContainerTextFlip words={["better", "modern", "smarter"]} />
-						</span>
+						<span className="block">Innovate the</span>
 						<Highlighter action="underline" color="#ffd24a" isView>
-							<span className="text-6xl lg:text-8xl font-bold bg-linear-to-br from-primary to-white bg-clip-text text-transparent">
-								Softwares,
+							<span className="text-6xl lg:text-9xl font-bold bg-linear-to-br from-primary to-white bg-clip-text text-transparent">
+								Future
 							</span>
 						</Highlighter>
-						<span className="mt-2 block">Faster Than Ever</span>
+						<span className="block pt-5">
+							through{" "}
+							<ContainerTextFlip words={["Design", "Technology", "Strategy"]} />
+						</span>
 					</h1>
 					<p className="mt-6 text-lg">
-						We are a full-spectrum innovation studio helping founders and
-						enterprises build intelligent, scalable, and design-driven solutions
+						We are a full spectrum innovation studio helping founders and
+						enterprises build intelligent, scalable, and design driven solutions
 						that transform industries
 					</p>
 					<div className="mt-10 mb-10 flex items-center gap-4 justify-center lg:justify-start">
