@@ -2,10 +2,6 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Checkbox } from "@/components/ui/checkbox";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
 import { Field, FieldError, FieldGroup, FieldLabel } from "../ui/field";
 import { Controller, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -17,13 +13,7 @@ import {
 	InputGroupText,
 	InputGroupTextarea,
 } from "../ui/input-group";
-import {
-	ChartAreaIcon,
-	DollarSignIcon,
-	MailIcon,
-	MessageCircle,
-	PersonStandingIcon,
-} from "lucide-react";
+import { DollarSignIcon, MailIcon, PersonStandingIcon } from "lucide-react";
 
 export default function ContactForm() {
 	const form = useForm<ContactFormType>({
