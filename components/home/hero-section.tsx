@@ -3,11 +3,11 @@ import { ArrowUpRight } from "lucide-react";
 import { GridPattern } from "../ui/grid-pattern";
 import { cn } from "@/lib/utils";
 import { Spotlight } from "../ui/spotlight";
-import { ContainerTextFlip } from "../ui/container-text-flip";
 import { AnimatedShinyText } from "../ui/animated-shiny-text";
 import { Highlighter } from "../ui/highlighter";
 import { Separator } from "../ui/separator";
 import { BorderBeam } from "../ui/border-beam";
+import { LayoutTextFlip } from "../ui/layout-text-flip";
 
 export default function HeroSection() {
 	return (
@@ -36,16 +36,20 @@ export default function HeroSection() {
 							<ArrowUpRight className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
 						</AnimatedShinyText>
 					</div>
-					<h1 className="mt-6 text-4xl md:text-5xl lg:text-[2.75rem] xl:text-7xl font-semibold leading-[1.2]! tracking-tighter">
+					<h1 className="mt-6 text-3xl md:text-7xl lg:text-[2.75rem] xl:text-6xl font-semibold leading-[1.2]! tracking-tighter">
 						<span className="block">Innovate the</span>
 						<Highlighter action="underline" color="#ffd24a" isView>
-							<span className="text-6xl lg:text-9xl font-bold bg-linear-to-br from-primary to-white bg-clip-text text-transparent">
+							<span className="text-7xl md:text-9xl font-bold bg-linear-to-br from-primary to-white bg-clip-text text-transparent">
 								Future
 							</span>
 						</Highlighter>
-						<span className="block pt-5">
+						<span className="block mt-6">
 							through{" "}
-							<ContainerTextFlip words={["Design", "Technology", "Strategy"]} />
+							{/* <ContainerTextFlip words={["Design", "Technology", "Strategy"]} /> */}
+							<LayoutTextFlip
+								text=""
+								words={["Design", "Technology", "Strategy"]}
+							/>
 						</span>
 					</h1>
 					<p className="mt-6 text-lg">
