@@ -1,7 +1,7 @@
 import { services } from "@/lib/content";
 import SectionHeadline from "../home/section-headline";
 import { Button } from "../ui/button";
-import { ArrowRight, Dot } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { AnimatedShinyText } from "../ui/animated-shiny-text";

@@ -20,7 +20,7 @@ export const LayoutTextFlip = ({
 		}, duration);
 
 		return () => clearInterval(interval);
-	}, []);
+	}, [duration, words.length]);
 
 	return (
 		<>
@@ -28,7 +28,7 @@ export const LayoutTextFlip = ({
 				layoutId="subtext"
 				className="text-2xl font-bold tracking-tight drop-shadow-lg md:text-4xl"
 			>
-				{text}  
+				{text}
 			</motion.span>
 
 			<motion.span

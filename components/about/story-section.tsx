@@ -14,12 +14,12 @@ export default function StorySection() {
 						</p>
 						<p>
 							We set out to change that. By combining cutting-edge AI technology
-							with human-centered design, we create software that doesn't just
+							with human-centered design, we create software that doesn&apos;t just
 							work—it transforms.
 						</p>
 						<p>
 							Today, we partner with forward-thinking companies to build the
-							intelligent systems that power tomorrow's success stories.
+							intelligent systems that power tomorrow&apos;s success stories.
 						</p>
 					</div>
 				</div>
