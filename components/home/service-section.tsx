@@ -29,7 +29,7 @@ export default function ServiceSection() {
 								{service.title}
 							</span>
 							<p className="mt-2 text-muted-foreground text-[17px]">
-								{service.description}
+								{service.shortDescription}
 							</p>
 						</div>
 					))}

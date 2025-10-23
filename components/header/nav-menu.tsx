@@ -10,6 +10,7 @@ import { navItems } from "@/lib/content";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ComponentProps } from "react";
+import { Sheet, SheetClose } from "../ui/sheet";
 
 export default function NavMenu(props: ComponentProps<typeof NavigationMenu>) {
 	const pathname = usePathname();
@@ -20,16 +21,20 @@ export default function NavMenu(props: ComponentProps<typeof NavigationMenu>) {
 				{navItems.map((item) => (
 					<NavigationMenuItem key={item.name}>
 						<NavigationMenuLink asChild>
-							<Link
-								href={item.link}
-								className={`${
-									pathname === item.link
-										? "text-primary hover:text-primary focus:text-primary active:text-primary"
-										: ""
-								}`}
-							>
-								{item.name}
-							</Link>
+							<Sheet>
+								<SheetClose asChild>
+									<Link
+										href={item.link}
+										className={`${
+											pathname === item.link
+												? "text-primary hover:text-primary focus:text-primary active:text-primary"
+												: ""
+										}`}
+									>
+										{item.name}
+									</Link>
+								</SheetClose>
+							</Sheet>
 						</NavigationMenuLink>
 					</NavigationMenuItem>
 				))}

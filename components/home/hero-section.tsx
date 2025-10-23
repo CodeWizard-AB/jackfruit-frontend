@@ -45,7 +45,6 @@ export default function HeroSection() {
 						</Highlighter>
 						<span className="block mt-6">
 							through{" "}
-							{/* <ContainerTextFlip words={["Design", "Technology", "Strategy"]} /> */}
 							<LayoutTextFlip
 								text=""
 								words={["Design", "Technology", "Strategy"]}

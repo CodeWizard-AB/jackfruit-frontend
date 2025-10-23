@@ -5,7 +5,7 @@ export default function BannerSection({
 	children,
 }: Readonly<{ children: React.ReactNode }>) {
 	return (
-		<section className="flex items-center justify-center overflow-hidden py-10 h-96 pt-30 relative">
+		<section className="flex items-center justify-center overflow-hidden py-10 pt-32 md:pt-48 relative container">
 			<GridPattern
 				width={60}
 				height={60}

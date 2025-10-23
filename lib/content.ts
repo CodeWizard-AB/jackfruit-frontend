@@ -11,6 +11,10 @@ import {
 	PhoneIcon,
 	MapPinIcon,
 	MailIcon,
+	Target,
+	Eye,
+	Heart,
+	Users,
 } from "lucide-react";
 
 export const navItems = [
@@ -69,132 +73,6 @@ export const skills = [
 	{
 		name: "PostgreSQL",
 		src: "https://ik.imagekit.io/xp2qigjdg/website-images/postgresql.svg?updatedAt=1760894715707",
-	},
-];
-
-export const services = [
-	{
-		title: "Custom Web App Development",
-		description:
-			"We build high-performance, scalable web applications tailored to your business — using Next.js, React, and modern backend frameworks.",
-		image:
-			"https://ik.imagekit.io/xp2qigjdg/website-images/web-application.svg?updatedAt=1760944770442",
-	},
-	{
-		title: "AI Automation & Workflow Systems",
-		description:
-			"Automate your repetitive tasks with AI-powered bots, n8n workflows, and custom automation systems designed to boost productivity.",
-		image:
-			"https://ik.imagekit.io/xp2qigjdg/website-images/ai-automation.svg?updatedAt=1760944770148",
-	},
-	{
-		title: "UI/UX Design & Branding",
-		description:
-			"Elegant and user-centric interfaces designed in Figma — focusing on usability, flow, and high-end aesthetics for your brand.",
-		image:
-			"https://ik.imagekit.io/xp2qigjdg/website-images/ui-ux-design.svg?updatedAt=1760945453761",
-	},
-	{
-		title: "SaaS Product Development",
-		description:
-			"From idea to launch — we architect, design, and deploy complete SaaS solutions that scale and deliver real business value.",
-		image: "/images/services/saas.jpg",
-	},
-	{
-		title: "Mobile App Development",
-		description:
-			"Cross-platform mobile apps with React Native or Flutter — delivering smooth, native experiences across iOS and Android.",
-		image: "/images/services/mobile-app.jpg",
-	},
-	{
-		title: "E-Commerce Development",
-		description:
-			"We build sleek, conversion-focused e-commerce platforms with integrated payment gateways, admin panels, and analytics dashboards.",
-		image: "/images/services/ecommerce.jpg",
-	},
-	{
-		title: "Website Design & Development",
-		description:
-			"Premium, responsive websites built for performance and aesthetics — combining Tailwind CSS, modern UX, and seamless animations.",
-		image: "/images/services/web-design.jpg",
-	},
-	{
-		title: "API Development & Integration",
-		description:
-			"We design and build secure, scalable REST and GraphQL APIs — and integrate third-party services like Stripe, Google, and OpenAI.",
-		image: "/images/services/api.jpg",
-	},
-	{
-		title: "CRM & Dashboard Systems",
-		description:
-			"Custom dashboards, analytics tools, and CRM solutions built to visualize data and manage business operations efficiently.",
-		image: "/images/services/crm.jpg",
-	},
-	{
-		title: "AI Chatbots & Virtual Assistants",
-		description:
-			"Intelligent chatbots powered by GPT and custom AI models — improving customer engagement and support automation.",
-		image: "/images/services/chatbot.jpg",
-	},
-	{
-		title: "Digital Transformation Consulting",
-		description:
-			"We guide businesses to modernize operations using automation, AI, and cloud technology for smarter decision-making.",
-		image: "/images/services/consulting.jpg",
-	},
-	{
-		title: "Branding & Visual Identity",
-		description:
-			"From logo to color system — we craft bold, premium brand identities that reflect innovation and trust.",
-		image: "/images/services/branding.jpg",
-	},
-	{
-		title: "Cloud Infrastructure & DevOps",
-		description:
-			"Deploy, scale, and monitor your applications using AWS, Vercel, or Railway — with continuous integration and backups.",
-		image: "/images/services/devops.jpg",
-	},
-	{
-		title: "Automation with n8n / Zapier",
-		description:
-			"Streamline workflows by integrating your tools using no-code automations — saving time and reducing manual work.",
-		image: "/images/services/n8n.jpg",
-	},
-	{
-		title: "AI-Powered Analytics & Insights",
-		description:
-			"Turn your business data into actionable insights using AI-driven dashboards and data visualization systems.",
-		image: "/images/services/ai-analytics.jpg",
-	},
-	{
-		title: "Maintenance & Technical Support",
-		description:
-			"We provide long-term support, performance optimization, and security updates for your live projects.",
-		image: "/images/services/support.jpg",
-	},
-	{
-		title: "Startup MVP Development",
-		description:
-			"Got an idea? We’ll design, prototype, and build your MVP fast — helping you validate and scale your product efficiently.",
-		image: "/images/services/mvp.jpg",
-	},
-	{
-		title: "Enterprise Solutions",
-		description:
-			"Custom software built for performance, security, and scalability — optimized for enterprise workflows and data integrity.",
-		image: "/images/services/enterprise.jpg",
-	},
-	{
-		title: "AI Integration in Existing Systems",
-		description:
-			"We integrate GPT, image recognition, and automation tools into your current workflow — enhancing efficiency and intelligence.",
-		image: "/images/services/ai-integration.jpg",
-	},
-	{
-		title: "Consultation & Project Strategy",
-		description:
-			"We partner with you to plan, architect, and execute your digital roadmap — aligning technology with business goals.",
-		image: "/images/services/strategy.jpg",
 	},
 ];
 
@@ -330,5 +208,167 @@ export const contacts = [
 		icon: MapPinIcon,
 		description: "Come say hello at our office HQ",
 		details: "New York, NY, USA",
+	},
+];
+
+export const values = [
+	{
+		icon: Target,
+		title: "Mission",
+		description:
+			"To redefine how humans and machines collaborate, creating intelligent solutions that amplify human potential.",
+	},
+	{
+		icon: Eye,
+		title: "Vision",
+		description:
+			"To make AI accessible for every modern business, democratizing innovation and excellence.",
+	},
+	{
+		icon: Heart,
+		title: "Values",
+		description:
+			"Innovation, integrity, and impact guide every decision we make and solution we build.",
+	},
+	{
+		icon: Users,
+		title: "Culture",
+		description:
+			"A collaborative environment where creativity thrives and boundaries are pushed daily.",
+	},
+];
+
+export const team = [
+	{
+		role: "Leadership",
+		members:
+			"Visionary leaders with decades of combined experience in software engineering and AI",
+	},
+	{
+		role: "Engineering",
+		members:
+			"World-class developers passionate about building elegant, scalable solutions",
+	},
+	{
+		role: "Design",
+		members:
+			"Creative minds crafting beautiful, intuitive experiences that users love",
+	},
+	{
+		role: "Strategy",
+		members: "Business experts who understand technology and transformation",
+	},
+];
+
+export const services = [
+	{
+		title: "Custom Web App Development",
+		subtitle: "Build tailored business software",
+		shortDescription:
+			"High-performance web apps designed to automate operations and scale smoothly.",
+		longDescription:
+			"We develop custom web applications using modern frameworks like Next.js and React to solve real business problems efficiently. Our solutions are built with performance, security, and scalability at their core, ready to grow with your business.",
+		image:
+			"https://ik.imagekit.io/xp2qigjdg/website-images/web-application.svg?updatedAt=1761237850488",
+	},
+	{
+		title: "AI Automation & Workflow Systems",
+		subtitle: "Automate repetitive tasks",
+		shortDescription:
+			"Boost productivity by automating manual, repetitive business workflows.",
+		longDescription:
+			"We build intelligent automation pipelines using AI, n8n, and custom bots to reduce human effort and eliminate costly errors. These systems optimize operations, save hours of manual work, and ensure your team focuses on what actually matters.",
+		image:
+			"https://ik.imagekit.io/xp2qigjdg/website-images/ai-automation.svg?updatedAt=1761237850360",
+	},
+	{
+		title: "UI/UX Design & Branding",
+		subtitle: "Beautiful and usable design",
+		shortDescription:
+			"Polished, conversion-focused designs crafted to represent your brand and delight users.",
+		longDescription:
+			"Our design process focuses heavily on user experience, ensuring interfaces are intuitive, clean, and visually appealing. We help establish a strong brand presence with consistent design systems, smooth interactions, and clear visual identity.",
+		image:
+			"https://ik.imagekit.io/xp2qigjdg/website-images/ui-ux-design.svg?updatedAt=1761237850545",
+	},
+	{
+		title: "SaaS Product Development",
+		subtitle: "Launch subscription-based platforms",
+		shortDescription:
+			"We build complete SaaS products from concept to deployment with scalable architecture.",
+		longDescription:
+			"Our team handles everything from authentication, billing, and dashboards to analytics and user management. We ensure your SaaS product is optimized for growth, onboarding, and retention while maintaining industry-grade security.",
+		image:
+			"https://ik.imagekit.io/xp2qigjdg/website-images/saas-application.svg?updatedAt=1761237850603",
+	},
+	{
+		title: "Mobile App Development",
+		subtitle: "Cross-platform mobile solutions",
+		shortDescription:
+			"Deliver smooth mobile app experiences across iOS and Android using modern stacks.",
+		longDescription:
+			"We build mobile applications using React Native or Flutter, ensuring fast performance and intuitive UI. Our apps are designed to support long-term maintainability, integrations, and seamless real-time interactions.",
+		image:
+			"https://ik.imagekit.io/xp2qigjdg/website-images/mobile-application.svg?updatedAt=1761238653223",
+	},
+	{
+		title: "E-Commerce Development",
+		subtitle: "Online stores that convert",
+		shortDescription:
+			"High-converting e-commerce solutions with secure checkout and product management.",
+		longDescription:
+			"We develop optimized e-commerce experiences with integrated payment gateways like Stripe or SSLCOMMERZ. Our systems include admin dashboards, inventory management, analytics, and customer engagement features.",
+		image:
+			"https://ik.imagekit.io/xp2qigjdg/website-images/ecommerce-app.svg?updatedAt=1761237850521",
+	},
+	{
+		title: "API Development & Integration",
+		subtitle: "Connect your systems securely",
+		shortDescription:
+			"Custom APIs and third-party integrations built for speed, reliability, and data security.",
+		longDescription:
+			"We build REST and GraphQL APIs with scalable architecture, ensuring smooth data communication between services. Our integrations connect your business with payment providers, CRMs, AI models, analytics tools, and more.",
+		image:
+			"https://ik.imagekit.io/xp2qigjdg/website-images/api-development.svg?updatedAt=1761237850426",
+	},
+	{
+		title: "Cloud Infrastructure & DevOps",
+		subtitle: "Deploy, scale, and automate",
+		shortDescription:
+			"Secure cloud environments with CI/CD, monitoring, backups, and fail-safe deployments.",
+		longDescription:
+			"We set up cloud systems using AWS, Vercel, Railway, and Docker-based deployments. Our DevOps approach ensures your software remains secure, reliable, and ready for rapid scaling.",
+		image:
+			"https://ik.imagekit.io/xp2qigjdg/website-images/devops-cloud.svg?updatedAt=1761237850474",
+	},
+	{
+		title: "Maintenance & Technical Support",
+		subtitle: "Keep systems healthy",
+		shortDescription:
+			"Continuous updates, bug fixes, security patches, and performance improvements.",
+		longDescription:
+			"We provide long-term support to keep your software stable, secure, and optimized. Our support helps prevent downtime, improve response times, and ensure user satisfaction.",
+		image:
+			"https://ik.imagekit.io/xp2qigjdg/website-images/maintenance-technical.svg?updatedAt=1761237850478",
+	},
+	{
+		title: "Startup MVP Development",
+		subtitle: "Validate ideas fast",
+		shortDescription:
+			"Launch a minimum viable product to validate ideas and attract investors.",
+		longDescription:
+			"We help startups build prototypes quickly, focusing on the core features that matter most. This reduces risk, shortens time-to-market, and helps secure funding faster.",
+		image:
+			"https://ik.imagekit.io/xp2qigjdg/website-images/startup-mvp.svg?updatedAt=1761237850439",
+	},
+	{
+		title: "Consultation & Project Strategy",
+		subtitle: "Plan your digital roadmap",
+		shortDescription:
+			"Strategic planning to align technology with business goals and growth.",
+		longDescription:
+			"We help businesses define clear requirements, scalable architecture, and an efficient delivery plan. Our consultation ensures you invest in the right technologies and avoid costly mistakes.",
+		image:
+			"https://ik.imagekit.io/xp2qigjdg/website-images/consultation-strategy.svg?updatedAt=1761237850501",
 	},
 ];
