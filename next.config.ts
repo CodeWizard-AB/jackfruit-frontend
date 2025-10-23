@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import withPlaiceholder from "@plaiceholder/next";
 
 const nextConfig: NextConfig = {
 	/* config options here */
@@ -8,8 +9,12 @@ const nextConfig: NextConfig = {
 				protocol: "https",
 				hostname: "ik.imagekit.io",
 			},
+			{
+				protocol: "https",
+				hostname: "images.ctfassets.net",
+			},
 		],
 	},
 };
 
-export default nextConfig;
+export default withPlaiceholder(nextConfig);

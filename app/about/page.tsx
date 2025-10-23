@@ -1,7 +1,7 @@
 import PhilosophySection from "@/components/about/philosophy-section";
 import StorySection from "@/components/about/story-section";
 import TeamSection from "@/components/about/team-section";
-import CTASection from "@/components/home/cta-section";
+import CTASection from "@/components/sections/cta-section";
 import BannerSection from "@/components/sections/banner-section";
 import { Fragment } from "react";
 

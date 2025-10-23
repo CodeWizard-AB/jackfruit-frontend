@@ -1,5 +1,5 @@
 import ChooseUsSection from "@/components/home/chooseus-section";
-import CTASection from "@/components/home/cta-section";
+import CTASection from "@/components/sections/cta-section";
 import FaqSection from "@/components/home/faq-section";
 import HeroSection from "@/components/home/hero-section";
 import ServiceSection from "@/components/home/service-section";
@@ -13,7 +13,7 @@ export default function Home() {
 			<ServiceSection />
 			<ChooseUsSection />
 			<FaqSection />
-			<CTASection />	
+			<CTASection />
 		</>
 	);
 }

@@ -3,9 +3,9 @@ import SectionHeadline from "../home/section-headline";
 import { Button } from "../ui/button";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image";
 import { AnimatedShinyText } from "../ui/animated-shiny-text";
 import { cn } from "@/lib/utils";
+import DynamicImage from "../ui/DynamicImage";
 
 export default function ServiceListSection() {
 	return (
@@ -20,14 +20,12 @@ export default function ServiceListSection() {
 						key={service.title}
 						className="flex flex-col-reverse md:flex-row items-center gap-x-12 gap-y-6 md:even:flex-row-reverse"
 					>
-						<figure className="relative w-full h-80 md:h-[500px]">
-							<Image
-								src={service.image}
-								alt={service.title}
-								className="object-cover object-center rounded-xl"
-								fill
-							/>
-						</figure>
+						<DynamicImage
+							containerClassName="w-full h-80 md:h-[500px]"
+							childClassName="rounded-xl"
+							src={service.image}
+							alt={service.title}
+						/>
 						<div className="basis-1/2 shrink-0">
 							<div
 								className={cn(

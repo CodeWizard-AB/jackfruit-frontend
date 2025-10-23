@@ -2,6 +2,7 @@ import { services } from "@/lib/content";
 import { Button } from "../ui/button";
 import SectionHeadline from "./section-headline";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ServiceSection() {
 	return (
@@ -35,7 +36,9 @@ export default function ServiceSection() {
 					))}
 				</div>
 				<div className="mx-auto w-max mt-16">
-					<Button>View all services</Button>
+					<Link href="/services">
+						<Button>View all services</Button>
+					</Link>
 				</div>
 			</div>
 		</section>

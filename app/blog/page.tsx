@@ -1,4 +1,6 @@
+import BlogsSection from "@/components/blog/blogs-section";
 import BannerSection from "@/components/sections/banner-section";
+import CTASection from "@/components/sections/cta-section";
 import { Fragment } from "react";
 
 export default function Blog() {
@@ -10,9 +12,11 @@ export default function Blog() {
 				</h1>
 
 				<p className="text-xl text-muted-foreground leading-relaxed">
-					Insights, trends, and thought leadership from the NEXUS team.
+					Insights, trends, and thought leadership from the JackFruit team.
 				</p>
 			</BannerSection>
+			<BlogsSection />
+			<CTASection />
 		</Fragment>
 	);
 }
