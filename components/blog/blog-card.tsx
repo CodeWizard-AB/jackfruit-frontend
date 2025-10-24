@@ -3,7 +3,7 @@ import { Card, CardDescription, CardHeader, CardTitle } from "../ui/card";
 import { Button } from "../ui/button";
 import DynamicImage from "../ui/DynamicImage";
 
-export default function BlogmedCard({ blog }: { blog: any }) {
+export default function BlogmedCard({ blog }: { blog: Blog }) {
 	return (
 		<Card className="pt-0 transition-all duration-300 hover:-translate-y-1 flex flex-col">
 			<div className="bg-gradient-to-br from-gold/20 to-transparent relative overflow-hidden">

@@ -2,7 +2,13 @@ interface Blog {
 	title: string;
 	slug: string;
 	excerpt: string;
-	coverImage: object;
+	coverImage: {
+		fields: {
+			file: {
+				url: string;
+			};
+		};
+	};
 	content: object;
 	publishDate: Date;
 	author: string;
