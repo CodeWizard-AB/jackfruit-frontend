@@ -5,16 +5,7 @@ export interface BlogFields {
 	title: string;
 	slug: string;
 	excerpt: string;
-	coverImage?: Asset<{
-		title: string;
-		description: string;
-		file: {
-			url: string;
-			details: unknown;
-			fileName: string;
-			contentType: string;
-		};
-	}>;
+	coverImage?: Asset;
 	content?: Document;
 	publishDate: string;
 	author: string;

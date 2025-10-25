@@ -4,6 +4,7 @@ import { clientContentful } from "@/lib/contentful";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { Document } from "@contentful/rich-text-types";
 import type { BlogEntry } from "@/types/contentful";
+import { Asset } from "contentful";
 
 export default async function SingleBlog({
 	params,
@@ -18,13 +19,14 @@ export default async function SingleBlog({
 	});
 
 	const blogPost = blog.items[0]?.fields;
+	const coverAsset = blogPost?.coverImage as Asset;
 
 	return (
 		<>
 			<BannerSection>
 				<DynamicImage
-					src={`https:${blogPost?.coverImage?.fields.file.url}`}
-					alt={blogPost?.title}
+					src={`https:${coverAsset?.fields?.file?.url || ""}`}
+					alt={slug}
 					containerClassName="md:h-[500px] aspect-video w-full"
 					childClassName="rounded-xl object-cover"
 				/>
