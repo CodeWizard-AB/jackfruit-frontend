@@ -22,6 +22,7 @@ export const navItems = [
 	{ name: "About", link: "/about" },
 	{ name: "Blog", link: "/blog" },
 	{ name: "Services", link: "/services" },
+	{ name: "Projects", link: "/projects" },
 	{ name: "Contact", link: "/contact" },
 ];
 
@@ -370,5 +371,22 @@ export const services = [
 			"We help businesses define clear requirements, scalable architecture, and an efficient delivery plan. Our consultation ensures you invest in the right technologies and avoid costly mistakes.",
 		image:
 			"https://ik.imagekit.io/xp2qigjdg/website-images/consultation-strategy.svg?updatedAt=1761237850501",
+	},
+];
+
+export const featuredProjects = [
+	{
+		title: "AwakeNation Football Event Platform",
+		client: "AwakeNation",
+		industry: "Sports & Event Management",
+		problem:
+			"Scaling and efficiently managing a high-attendance national football event with dynamic scheduling and real-time content needs.",
+		solution:
+			"Built a custom, performance-focused Event Management Platform utilizing a Sanity Headless CMS for rapid, real-time content delivery and easy administrative control.",
+		impact:
+			"Facilitated a successful, high-profile national event with massive user attendance, proving the platform's scalability and robustness under peak load.",
+		tags: ["Sanity CMS", "Event Management", "Sports", "Headless CMS"],
+		imageUrl:
+			"https://ik.imagekit.io/xp2qigjdg/website-images/awakenationbd.com_.png?updatedAt=1761837030089",
 	},
 ];
