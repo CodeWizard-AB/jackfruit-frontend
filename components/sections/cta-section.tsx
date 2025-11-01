@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function CTASection() {
 	return (
@@ -19,13 +20,15 @@ export default function CTASection() {
 						Get Started Free
 						<ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
 					</Button>
-					<Button
-						size="lg"
-						variant="outline"
-						className="border-gray-700 text-white hover:bg-slate-900/50 bg-slate-900/30"
-					>
-						Watch Demo
-					</Button>
+					<Link href="/projects">
+						<Button
+							size="lg"
+							variant="outline"
+							className="border-gray-700 text-white hover:bg-slate-900/50 bg-slate-900/30"
+						>
+							Watch Demo
+						</Button>
+					</Link>
 				</div>
 			</div>
 		</section>

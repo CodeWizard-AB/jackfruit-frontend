@@ -12,7 +12,7 @@ export default function ServiceListSection() {
 		<section className="container">
 			<SectionHeadline
 				title="Core Services"
-				description="Comprehensive solutions for modern challenges"
+				description="Comprehensive and enduring solutions for the challenges of the modern world"
 			/>
 			<div className="mt-8 md:mt-16 w-full mx-auto space-y-20">
 				{services.map((service) => (

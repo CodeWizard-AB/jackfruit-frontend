@@ -9,11 +9,11 @@ export default function ProjectListSection() {
 				{featuredProjects.map((project, index) => (
 					<Card
 						key={index}
-						className="hover-elevate active-elevate-2 transition-all duration-300 overflow-hidden md:pl-6"
+						className="hover-elevate active-elevate-2 transition-all duration-300 overflow-hidden md:pl-6 mb-10"
 					>
 						<div className="grid md:grid-cols-2 gap-8">
 							<DynamicImage
-								src={project.imageUrl}
+								src={project.imageUrl!}
 								alt={project.title}
 								childClassName="object-top rounded-lg"
 							/>
@@ -22,7 +22,7 @@ export default function ProjectListSection() {
 								<div className="space-y-2">
 									<h3 className="text-3xl font-bold">{project.title}</h3>
 									<p className="text-lg text-muted-foreground">
-										{project.client}
+										{project.industry}
 									</p>
 								</div>
 

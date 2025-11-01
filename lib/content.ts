@@ -268,7 +268,7 @@ export const services = [
 		shortDescription:
 			"High-performance web apps designed to automate operations and scale smoothly.",
 		longDescription:
-			"We develop custom web applications using modern frameworks like Next.js and React to solve real business problems efficiently. Our solutions are built with performance, security, and scalability at their core, ready to grow with your business.",
+			"We design and develop bespoke web applications using the finest modern frameworks such as Next.js and React. Each solution is meticulously built for strength, security, and scalability, ensuring it grows seamlessly alongside your enterprise.",
 		image:
 			"https://ik.imagekit.io/xp2qigjdg/website-images/web-application.svg?updatedAt=1761237850488",
 	},
@@ -278,7 +278,7 @@ export const services = [
 		shortDescription:
 			"Boost productivity by automating manual, repetitive business workflows.",
 		longDescription:
-			"We build intelligent automation pipelines using AI, n8n, and custom bots to reduce human effort and eliminate costly errors. These systems optimize operations, save hours of manual work, and ensure your team focuses on what actually matters.",
+			"Our intelligent automation systems harness the power of AI, n8n, and custom-built bots to refine efficiency and precision. These pipelines reduce human effort, eliminate costly mistakes, and allow your team to focus on work that truly matters.",
 		image:
 			"https://ik.imagekit.io/xp2qigjdg/website-images/ai-automation.svg?updatedAt=1761237850360",
 	},
@@ -288,7 +288,7 @@ export const services = [
 		shortDescription:
 			"Polished, conversion-focused designs crafted to represent your brand and delight users.",
 		longDescription:
-			"Our design process focuses heavily on user experience, ensuring interfaces are intuitive, clean, and visually appealing. We help establish a strong brand presence with consistent design systems, smooth interactions, and clear visual identity.",
+			"Our design philosophy balances elegance with function. Every interface we create is crafted to be intuitive, visually graceful, and deeply engaging. Through refined branding and cohesive design systems, we help your business present a confident and enduring identity.",
 		image:
 			"https://ik.imagekit.io/xp2qigjdg/website-images/ui-ux-design.svg?updatedAt=1761237850545",
 	},
@@ -298,7 +298,7 @@ export const services = [
 		shortDescription:
 			"We build complete SaaS products from concept to deployment with scalable architecture.",
 		longDescription:
-			"Our team handles everything from authentication, billing, and dashboards to analytics and user management. We ensure your SaaS product is optimized for growth, onboarding, and retention while maintaining industry-grade security.",
+			"We bring subscription-based platforms to life with complete systems for authentication, billing, analytics, and user management. Each product is built with growth in mind—secure, seamless, and ready to serve an expanding audience.",
 		image:
 			"https://ik.imagekit.io/xp2qigjdg/website-images/saas-application.svg?updatedAt=1761237850603",
 	},
@@ -308,7 +308,7 @@ export const services = [
 		shortDescription:
 			"Deliver smooth mobile app experiences across iOS and Android using modern stacks.",
 		longDescription:
-			"We build mobile applications using React Native or Flutter, ensuring fast performance and intuitive UI. Our apps are designed to support long-term maintainability, integrations, and seamless real-time interactions.",
+			"Our mobile applications, created with React Native or Flutter, combine performance with beauty. They deliver swift navigation, intuitive experiences, and consistent reliability across all devices, ensuring your users remain engaged and connected.",
 		image:
 			"https://ik.imagekit.io/xp2qigjdg/website-images/mobile-application.svg?updatedAt=1761238653223",
 	},
@@ -318,7 +318,7 @@ export const services = [
 		shortDescription:
 			"High-converting e-commerce solutions with secure checkout and product management.",
 		longDescription:
-			"We develop optimized e-commerce experiences with integrated payment gateways like Stripe or SSLCOMMERZ. Our systems include admin dashboards, inventory management, analytics, and customer engagement features.",
+			"We design e-commerce experiences that inspire trust and drive conversions. With payment integrations such as Stripe and SSLCOMMERZ, along with intelligent dashboards and analytics, your business gains a complete digital commerce ecosystem built for success.",
 		image:
 			"https://ik.imagekit.io/xp2qigjdg/website-images/ecommerce-app.svg?updatedAt=1761237850521",
 	},
@@ -328,7 +328,7 @@ export const services = [
 		shortDescription:
 			"Custom APIs and third-party integrations built for speed, reliability, and data security.",
 		longDescription:
-			"We build REST and GraphQL APIs with scalable architecture, ensuring smooth data communication between services. Our integrations connect your business with payment providers, CRMs, AI models, analytics tools, and more.",
+			"Our APIs are designed with precision and foresight, using REST and GraphQL architectures to ensure secure and seamless communication between systems. We connect your platform to CRMs, AI models, payment gateways, and analytical tools with effortless harmony.",
 		image:
 			"https://ik.imagekit.io/xp2qigjdg/website-images/api-development.svg?updatedAt=1761237850426",
 	},
@@ -338,7 +338,7 @@ export const services = [
 		shortDescription:
 			"Secure cloud environments with CI/CD, monitoring, backups, and fail-safe deployments.",
 		longDescription:
-			"We set up cloud systems using AWS, Vercel, Railway, and Docker-based deployments. Our DevOps approach ensures your software remains secure, reliable, and ready for rapid scaling.",
+			"We build and maintain robust cloud environments using AWS, Vercel, Railway, and Docker. Our DevOps practices ensure security, reliability, and agility, allowing your digital systems to scale gracefully as your ambitions expand.",
 		image:
 			"https://ik.imagekit.io/xp2qigjdg/website-images/devops-cloud.svg?updatedAt=1761237850474",
 	},
@@ -348,7 +348,7 @@ export const services = [
 		shortDescription:
 			"Continuous updates, bug fixes, security patches, and performance improvements.",
 		longDescription:
-			"We provide long-term support to keep your software stable, secure, and optimized. Our support helps prevent downtime, improve response times, and ensure user satisfaction.",
+			"Our commitment extends beyond deployment. We provide attentive technical support and continuous maintenance to preserve system health, prevent disruptions, and uphold user satisfaction at every moment.",
 		image:
 			"https://ik.imagekit.io/xp2qigjdg/website-images/maintenance-technical.svg?updatedAt=1761237850478",
 	},
@@ -358,7 +358,7 @@ export const services = [
 		shortDescription:
 			"Launch a minimum viable product to validate ideas and attract investors.",
 		longDescription:
-			"We help startups build prototypes quickly, focusing on the core features that matter most. This reduces risk, shortens time-to-market, and helps secure funding faster.",
+			"We guide emerging ventures from concept to prototype with precision and clarity. Our approach focuses on the essential features that validate ideas swiftly, attract investors, and pave the way for full-scale development.",
 		image:
 			"https://ik.imagekit.io/xp2qigjdg/website-images/startup-mvp.svg?updatedAt=1761237850439",
 	},
@@ -368,7 +368,7 @@ export const services = [
 		shortDescription:
 			"Strategic planning to align technology with business goals and growth.",
 		longDescription:
-			"We help businesses define clear requirements, scalable architecture, and an efficient delivery plan. Our consultation ensures you invest in the right technologies and avoid costly mistakes.",
+			"Every great product begins with vision and strategy. We collaborate closely to define clear objectives, architect scalable solutions, and map a practical path toward successful delivery. Our counsel ensures your technology investments are wise, strategic, and future-ready.",
 		image:
 			"https://ik.imagekit.io/xp2qigjdg/website-images/consultation-strategy.svg?updatedAt=1761237850501",
 	},
@@ -376,8 +376,7 @@ export const services = [
 
 export const featuredProjects = [
 	{
-		title: "AwakeNation Football Event Platform",
-		client: "AwakeNation",
+		title: "AwakeNation Football Website",
 		industry: "Sports & Event Management",
 		problem:
 			"Scaling and efficiently managing a high-attendance national football event with dynamic scheduling and real-time content needs.",
@@ -385,8 +384,74 @@ export const featuredProjects = [
 			"Built a custom, performance-focused Event Management Platform utilizing a Sanity Headless CMS for rapid, real-time content delivery and easy administrative control.",
 		impact:
 			"Facilitated a successful, high-profile national event with massive user attendance, proving the platform's scalability and robustness under peak load.",
-		tags: ["Sanity CMS", "Event Management", "Sports", "Headless CMS"],
+		tags: ["Sanity CMS", "Event Management", "Headless CMS"],
 		imageUrl:
 			"https://ik.imagekit.io/xp2qigjdg/website-images/awakenationbd.com_.png?updatedAt=1761837030089",
+	},
+	{
+		title: "Omnifood Meal Planning Website",
+		industry: "Health-Tech / Food Delivery",
+		problem:
+			"Users struggle with planning healthy, personalized meals daily, leading to diet inconsistency and frustration.",
+		solution:
+			"Developed an AI-powered meal subscription application that uses machine learning to select meals from over 5,000 recipes based on user preferences and nutritional goals.",
+		impact:
+			"Provided personalized, healthy meal plans delivered daily, significantly improving user adherence to diet goals and simplifying the meal preparation process.",
+		tags: ["Health-Tech", "Landing Page Development", "Subscription Service"],
+		imageUrl:
+			"https://ik.imagekit.io/xp2qigjdg/website-images/onmifood-ab.netlify.app_.png?updatedAt=1761994685349",
+	},
+	{
+		title: "High-Fidelity Productivity SaaS Landing Page",
+		industry: "Software as a Service (SaaS) / Productivity",
+		problem:
+			"Creating a high-impact, modern landing page for a new productivity application to effectively capture leads and clearly communicate product value.",
+		solution:
+			"Designed and developed a visually striking, high-fidelity landing page (using Vercel for deployment) focused on 'Pathway to Productivity' with clear feature sections, a pricing matrix, and user testimonials.",
+		impact:
+			"Delivered a compelling digital storefront for the SaaS product, enhancing brand credibility and optimizing the conversion funnel from visitor to trial sign-up.",
+		tags: ["SaaS", "UI/UX Design", "Vercel", "Web Development", "Productivity"],
+		imageUrl:
+			"https://ik.imagekit.io/xp2qigjdg/website-images/saas-landing-page-anunay.vercel.app_.png?updatedAt=1761994685032",
+	},
+	{
+		title: "LWS XStream Custom Streaming Platform",
+		industry: "Media / Content Streaming",
+		problem:
+			"The client needed a dedicated, branded platform to aggregate, host, and showcase popular video streams and content creators, fostering a community of streamers.",
+		solution:
+			"Developed a dark-themed, high-engagement video streaming portal (deployed on Vercel) focused on 'Play, Compete, Follow Popular Streamers,' featuring streams of the day and categorized video content.",
+		impact:
+			"Successfully launched a central hub for video content and streamers, providing a superior, distraction-free viewing experience and building a focused community around gaming and tech content.",
+		tags: ["Streaming", "Video Portal", "Frontend Development"],
+		imageUrl:
+			"https://ik.imagekit.io/xp2qigjdg/website-images/x-stream-lws.vercel.app_en.png?updatedAt=1761995336115",
+	},
+	{
+		title: "LWS MovieDB Discovery Platform",
+		industry: "Entertainment / Media",
+		problem:
+			"The client needed to build a fully functional, dynamic front-end application to practice integrating with external APIs and displaying large sets of structured data (movies).",
+		solution:
+			"Developed a dark-themed Movie Database application (MovieDB) utilizing a public API (like TMDb) to fetch and display categorized lists of films, including 'Trending Now,' 'Popular,' and 'Top Rated' sections.",
+		impact:
+			"Created a robust, responsive web application that demonstrates competence in API integration, state management, and the creation of an intuitive media browsing experience.",
+		tags: ["API Integration", "The Movie Database (TMDb)", "Web Development"],
+		imageUrl:
+			"https://ik.imagekit.io/xp2qigjdg/website-images/lws-moviedb-three.vercel.app_.png?updatedAt=1761995336118",
+	},
+	{
+		title: "Asterot Football Tournament",
+		client: "Asterot / The Rising Generation",
+		industry: "Sports / Event Management",
+		problem:
+			"The organizers required a centralized, robust online platform for managing the 'Rising Generation Football Tournament 2025,' including team registration, schedule updates, and rules dissemination.",
+		solution:
+			"Developed a dark-themed, highly detailed landing page and portal that handles team registration payments, showcases the tournament format, rules, schedule, and contact information.",
+		impact:
+			"Streamlined the entire registration and information process for participants, ensuring a professional, scalable, and easy-to-manage digital presence for a major sporting event.",
+		tags: ["Sports", "Registration Portal", "Payment Integration"],
+		imageUrl:
+			"https://ik.imagekit.io/xp2qigjdg/website-images/asterot-landing-page.vercel.app_.png?updatedAt=1761995972481",
 	},
 ];

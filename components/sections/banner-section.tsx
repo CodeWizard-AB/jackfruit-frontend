@@ -14,7 +14,7 @@ export default function BannerSection({
 					"[mask-image:radial-gradient(1000px_circle_at_center,white,transparent)] opacity-50 lg:opacity-80"
 				)}
 			/>
-			<div className="text-center space-y-6">{children}</div>
+			<div className="text-center space-y-6 max-w-6xl">{children}</div>
 		</section>
 	);
 }
