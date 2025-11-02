@@ -107,7 +107,7 @@ export default function StorySection() {
 							Our Impact
 						</h3>
 						<p className="text-lg text-muted-foreground leading-loose">
-							Over the years, we've partnered with companies that share our
+							Over the years, we&apos;ve partnered with companies that share our
 							hunger for progress—from visionary startups to established
 							enterprises seeking to redefine their industries. Together, we
 							build the platforms, systems, and experiences that power the
