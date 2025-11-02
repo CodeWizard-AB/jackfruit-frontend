@@ -8,6 +8,7 @@ import { Highlighter } from "../ui/highlighter";
 import { Separator } from "../ui/separator";
 import { BorderBeam } from "../ui/border-beam";
 import { LayoutTextFlip } from "../ui/layout-text-flip";
+import Link from "next/link";
 
 export default function HeroSection() {
 	return (
@@ -57,12 +58,17 @@ export default function HeroSection() {
 						that transform industries
 					</p>
 					<div className="mt-10 mb-10 flex items-center gap-4 justify-center lg:justify-start">
-						<Button size="lg" className="text-base">
-							Talk to an Expert
-							<ArrowUpRight className="h-5! w-5!" />
-						</Button>
+						<Link
+							href={"https://calendly.com/jackfruit-1ech/30min"}
+							target="_blank"
+						>
+							<Button size="lg" className="text-base">
+								Talk to an Expert
+								<ArrowUpRight className="h-5! w-5!" />
+							</Button>
+						</Link>
 					</div>
-					<div className="flex items-center justify-center lg:justify-start lg:gap-8">
+					{/* <div className="flex items-center justify-center lg:justify-start lg:gap-8">
 						<div className="text-center group cursor-pointer">
 							<div className="text-3xl font-bold text-gold group-hover:scale-110 transition-transform">
 								99%
@@ -83,7 +89,7 @@ export default function HeroSection() {
 							</div>
 							<div className="text-sm text-[#A0A0A0]">Support Available</div>
 						</div>
-					</div>
+					</div> */}
 				</div>
 				<div className="w-full aspect-video lg:aspect-auto lg:w-[1000px] lg:h-[calc(100vh-15rem)] bg-accent rounded-xl overflow-hidden border relative">
 					<BorderBeam

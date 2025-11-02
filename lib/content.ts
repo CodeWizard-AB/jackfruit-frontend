@@ -188,7 +188,7 @@ export const features = [
 export const contacts = [
 	{
 		title: "Live chat",
-		link: "https://wa.me/8801719000000",
+		link: "https://wa.me/+14154226563",
 		icon: MessageCircle,
 		description: "Chat with us on WhatsApp",
 		details: "Start a conversation",
@@ -198,21 +198,21 @@ export const contacts = [
 		link: "tel:+8801719-000000",
 		icon: PhoneIcon,
 		description: "Monday-Friday from 8am to 5pm",
-		details: "+8801719-000000",
+		details: "+1 (415) 422-6563",
 	},
 	{
 		title: "Email",
-		link: "mailto:0BtYb@example.com",
+		link: "mailto:jackfruit.1ech@gmail.com",
 		description: "We would love to hear from you",
 		icon: MailIcon,
-		details: "0BtYb@example.com",
+		details: "jackfruit.1ech@gmail.com",
 	},
 	{
 		title: "Office",
 		link: "",
 		icon: MapPinIcon,
 		description: "Come say hello at our office HQ",
-		details: "New York, NY, USA",
+		details: "Kearny Street, San Francisco, California",
 	},
 ];
 

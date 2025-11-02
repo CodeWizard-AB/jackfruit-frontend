@@ -44,8 +44,11 @@ export default function ServiceListSection() {
 								{service.longDescription}
 							</p>
 							<Button asChild size="lg" className="mt-6 gap-3">
-								<Link href={""}>
-									Book a call <ArrowRight />
+								<Link
+									href={"https://calendly.com/jackfruit-1ech/30min"}
+									target="_blank"
+								>
+									Book a Consultation <ArrowRight />
 								</Link>
 							</Button>
 						</div>

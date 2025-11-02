@@ -16,10 +16,15 @@ export default function CTASection() {
 					matters most. Join teams that have already saved thousands of hours.
 				</p>
 				<div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
-					<Button size="lg">
-						Get Started Free
-						<ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-					</Button>
+					<Link
+						href={"https://calendly.com/jackfruit-1ech/30min"}
+						target="_blank"
+					>
+						<Button size="lg">
+							Book a Consultation
+							<ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+						</Button>
+					</Link>
 					<Link href="/projects">
 						<Button
 							size="lg"

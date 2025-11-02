@@ -6,6 +6,7 @@ import NavigationSheet from "./navigation-sheet";
 import NavMenu from "./nav-menu";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 export default function Navbar() {
 	const [isScrolled, setIsScrolled] = useState(false);
@@ -34,7 +35,12 @@ export default function Navbar() {
 					{/* Desktop Menu */}
 					<NavMenu className="hidden md:block" />
 					<div className="flex items-center gap-3">
-						<Button>BOOK A CALL</Button>
+						<Link
+							href={"https://calendly.com/jackfruit-1ech/30min"}
+							target="_blank"
+						>
+							<Button>BOOK A CALL</Button>
+						</Link>
 						{/* Mobile Menu */}
 						<div className="md:hidden">
 							<NavigationSheet />
