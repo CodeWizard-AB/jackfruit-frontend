@@ -15,6 +15,9 @@ import {
 	Eye,
 	Heart,
 	Users,
+	Crown,
+	Palette,
+	Lightbulb,
 } from "lucide-react";
 
 export const navItems = [
@@ -81,52 +84,53 @@ export const faq = [
 	{
 		question: "What does JackFruit do?",
 		answer:
-			"JackFruit is a software and automation company that helps businesses scale faster through modern web development, AI automation, and digital transformation. We build smart, fast, and elegant solutions customized for your goals.",
+			"JackFruit is an innovation and technology studio that partners with entrepreneurs, enterprises, and organizations to create intelligent, scalable, and design focused digital solutions. Our mission is to simplify complexity and deliver technology that inspires confidence and drives growth.",
 	},
 	{
-		question: "What kind of services do you offer?",
+		question: "What services do you offer?",
 		answer:
-			"We offer full-stack web development, AI agent automation, mobile app development, SaaS product creation, custom dashboards, API integrations, and branding solutions — everything your business needs to grow digitally.",
+			"We provide a complete range of services including concept development, user interface and user experience design, branding, custom web and mobile application development, artificial intelligence and automation integration, cloud deployment, and long term product maintenance.",
 	},
 	{
-		question: "Do you provide custom solutions for startups?",
+		question: "Do you work with startups?",
 		answer:
-			"Absolutely. We love working with startups. From MVP development to product design and automation, we help startups launch fast, scale smart, and stand out with a premium digital presence.",
+			"Yes. We work closely with startups and emerging companies to build customized digital solutions that align with their unique vision and business model. From the initial concept to launch, we guide our partners through each stage with precision and care.",
 	},
 	{
 		question: "How long does it take to build a project?",
 		answer:
-			"It depends on the complexity and features. Small projects may take 1–3 weeks, while large-scale platforms can take 2–3 months. We provide clear timelines before starting.",
+			"It depends on the complexity and features. Small projects may take 1-3 weeks, while large-scale platforms can take 2-3 months. We provide clear timelines before starting.",
 	},
 	{
 		question: "What technologies do you use?",
 		answer:
-			"We use modern technologies like Next.js, React, Node.js, Express, MongoDB, PostgreSQL, Prisma, Tailwind CSS, Shadcn UI, and AI automation tools like n8n, OpenAI, and LangChain.",
+			"Our team works with trusted and modern technologies such as Next.js, React, Node.js, Tailwind CSS, Python, MongoDB, and PostgreSQL. Every technology is carefully selected to ensure efficiency, security, and long term sustainability.",
 	},
 	{
-		question: "Do you provide post-launch support?",
+		question: "Do you provide post launch support?",
 		answer:
-			"Yes. We offer maintenance, updates, and ongoing optimization for all our products. You can choose a monthly support plan or pay per update depending on your needs.",
+			"Yes, we provide continuous support and maintenance to ensure your product remains secure, optimized, and ready to scale. Our post launch service is designed to help your business grow confidently and adapt to new challenges.",
 	},
 	{
-		question: "Can you integrate AI into existing software?",
+		question:
+			"Can you integrate artificial intelligence into existing systems?",
 		answer:
-			"Yes, we specialize in AI integrations — from chatbots and workflow automations to predictive analytics — we can embed AI into your current systems seamlessly.",
+			"Yes, we have specialized expertise in artificial intelligence and automation. We can enhance your existing software with intelligent features or design entirely new systems that use AI to improve performance, decision making, and user experience.",
 	},
 	{
-		question: "How do I start working with JackFruit?",
+		question: "How can I start working with JackFruit Company?",
 		answer:
-			"Simply fill out our contact form or schedule a free consultation call. We’ll discuss your project, goals, and prepare a proposal with clear cost and timeline estimates.",
+			"Starting with us is simple. Schedule a consultation through our website. Our team will conduct a discovery session to understand your goals and requirements. We will provide a detailed proposal with the project scope, timeline, and investment breakdown. Once approved, we begin the design, development, and implementation process with regular updates at every stage.",
 	},
 	{
-		question: "Where is JackFruit located?",
+		question: "Where is JackFruit Company located?",
 		answer:
-			"We’re a global remote-first company based in Bangladesh, serving clients worldwide with modern communication and project management tools.",
+			"Our headquarters are located at 353 Kearny Street, San Francisco, California 94108. We proudly collaborate with clients across the globe through our digital communication and project management systems, ensuring seamless coordination regardless of location.",
 	},
 	{
 		question: "How much do your services cost?",
 		answer:
-			"Pricing depends on the project type and complexity. We offer flexible pricing for startups, small businesses, and enterprises. Every project starts with a free quote.",
+			"The cost depends on the complexity, scale, and requirements of your project. After our discovery session, we will provide a clear and transparent proposal that includes pricing details, payment schedule, and deliverables. Our goal is to ensure complete understanding and trust before any work begins.",
 	},
 ];
 
@@ -217,47 +221,52 @@ export const values = [
 		icon: Target,
 		title: "Mission",
 		description:
-			"To redefine how humans and machines collaborate, creating intelligent solutions that amplify human potential.",
+			"To reimagine the relationship between humans and technology by creating intelligent systems that elevate potential, enhance capability, and open new frontiers of innovation and progress.",
 	},
 	{
 		icon: Eye,
 		title: "Vision",
 		description:
-			"To make AI accessible for every modern business, democratizing innovation and excellence.",
+			"To make artificial intelligence and advanced technology accessible, reliable, and transformative for every organization, enabling innovation, efficiency, and growth without compromise.",
 	},
 	{
 		icon: Heart,
 		title: "Values",
 		description:
-			"Innovation, integrity, and impact guide every decision we make and solution we build.",
+			"Innovation, integrity, and impact stand as the cornerstones of JackFruit. Every project we undertake embodies these ideals through thoughtful design, precise engineering, and purposeful execution that delivers lasting value.",
 	},
 	{
 		icon: Users,
 		title: "Culture",
 		description:
-			"A collaborative environment where creativity thrives and boundaries are pushed daily.",
+			"We nurture a culture of curiosity and excellence where creativity thrives and ambition is celebrated. Every member of our team is inspired to explore boldly, challenge convention, and create with intention, for imagination is the most powerful currency of all.",
 	},
 ];
 
 export const team = [
 	{
 		role: "Leadership",
+		icon: Crown,
 		members:
-			"Visionary leaders with decades of combined experience in software engineering and AI",
+			"Guided by visionary leaders with decades of combined experience in software engineering, artificial intelligence, and business strategy, Jackfruit charts a course that balances insight with foresight, ambition with integrity, and vision with execution.",
 	},
 	{
 		role: "Engineering",
+		icon: Code2,
 		members:
-			"World-class developers passionate about building elegant, scalable solutions",
+			"Our engineers create systems of enduring quality and remarkable precision. They build scalable architectures, resilient platforms, and elegant code that transforms complexity into clarity and empowers organizations to act decisively and efficiently.",
 	},
 	{
 		role: "Design",
+		icon: Palette,
 		members:
-			"Creative minds crafting beautiful, intuitive experiences that users love",
+			"Our designers transform function into experience. Every interface is intuitive, every interaction seamless, and every product a manifestation of elegance and human centered design. Their work is not only seen but felt, creating experiences that delight, engage, and endure.",
 	},
 	{
 		role: "Strategy",
-		members: "Business experts who understand technology and transformation",
+		icon: Lightbulb,
+		members:
+			"Our strategists serve as the architects of purpose. They translate vision into action, aligning technological innovation with measurable business outcomes. Their expertise ensures that every solution we deliver advances not only operational goals but strategic ambitions.",
 	},
 ];
 
@@ -268,7 +277,7 @@ export const services = [
 		shortDescription:
 			"High-performance web apps designed to automate operations and scale smoothly.",
 		longDescription:
-			"We design and develop bespoke web applications using the finest modern frameworks such as Next.js and React. Each solution is meticulously built for strength, security, and scalability, ensuring it grows seamlessly alongside your enterprise.",
+			"We design and develop bespoke web applications using the finest modern frameworks such as Next.js and React. Each solution is meticulously built for strength, security, and scalability, ensuring it grows seamlessly alongside your enterprise",
 		image:
 			"https://ik.imagekit.io/xp2qigjdg/website-images/web-application.svg?updatedAt=1761237850488",
 	},
@@ -278,7 +287,7 @@ export const services = [
 		shortDescription:
 			"Boost productivity by automating manual, repetitive business workflows.",
 		longDescription:
-			"Our intelligent automation systems harness the power of AI, n8n, and custom-built bots to refine efficiency and precision. These pipelines reduce human effort, eliminate costly mistakes, and allow your team to focus on work that truly matters.",
+			"Our intelligent automation systems harness the power of AI, n8n, and custom built bots to refine efficiency and precision. These pipelines reduce human effort, eliminate costly mistakes, and allow your team to focus on work that truly matters",
 		image:
 			"https://ik.imagekit.io/xp2qigjdg/website-images/ai-automation.svg?updatedAt=1761237850360",
 	},
@@ -288,7 +297,7 @@ export const services = [
 		shortDescription:
 			"Polished, conversion-focused designs crafted to represent your brand and delight users.",
 		longDescription:
-			"Our design philosophy balances elegance with function. Every interface we create is crafted to be intuitive, visually graceful, and deeply engaging. Through refined branding and cohesive design systems, we help your business present a confident and enduring identity.",
+			"Our design philosophy balances elegance with function. Every interface we create is crafted to be intuitive, visually graceful, and deeply engaging. Through refined branding and cohesive design systems, we help your business present a confident and enduring identity",
 		image:
 			"https://ik.imagekit.io/xp2qigjdg/website-images/ui-ux-design.svg?updatedAt=1761237850545",
 	},
@@ -298,7 +307,7 @@ export const services = [
 		shortDescription:
 			"We build complete SaaS products from concept to deployment with scalable architecture.",
 		longDescription:
-			"We bring subscription-based platforms to life with complete systems for authentication, billing, analytics, and user management. Each product is built with growth in mind—secure, seamless, and ready to serve an expanding audience.",
+			"We bring subscription based platforms to life with complete systems for authentication, billing, analytics, and user management. Each product is built with growth in mind secure, seamless, and ready to serve an expanding audience",
 		image:
 			"https://ik.imagekit.io/xp2qigjdg/website-images/saas-application.svg?updatedAt=1761237850603",
 	},
@@ -308,7 +317,7 @@ export const services = [
 		shortDescription:
 			"Deliver smooth mobile app experiences across iOS and Android using modern stacks.",
 		longDescription:
-			"Our mobile applications, created with React Native or Flutter, combine performance with beauty. They deliver swift navigation, intuitive experiences, and consistent reliability across all devices, ensuring your users remain engaged and connected.",
+			"Our mobile applications, created with React Native or Flutter, combine performance with beauty. They deliver swift navigation, intuitive experiences, and consistent reliability across all devices, ensuring your users remain engaged and connected",
 		image:
 			"https://ik.imagekit.io/xp2qigjdg/website-images/mobile-application.svg?updatedAt=1761238653223",
 	},
@@ -318,7 +327,7 @@ export const services = [
 		shortDescription:
 			"High-converting e-commerce solutions with secure checkout and product management.",
 		longDescription:
-			"We design e-commerce experiences that inspire trust and drive conversions. With payment integrations such as Stripe and SSLCOMMERZ, along with intelligent dashboards and analytics, your business gains a complete digital commerce ecosystem built for success.",
+			"We design ecommerce experiences that inspire trust and drive conversions. With payment integrations such as Stripe and SSLCOMMERZ, along with intelligent dashboards and analytics, your business gains a complete digital commerce ecosystem built for success",
 		image:
 			"https://ik.imagekit.io/xp2qigjdg/website-images/ecommerce-app.svg?updatedAt=1761237850521",
 	},
@@ -328,7 +337,7 @@ export const services = [
 		shortDescription:
 			"Custom APIs and third-party integrations built for speed, reliability, and data security.",
 		longDescription:
-			"Our APIs are designed with precision and foresight, using REST and GraphQL architectures to ensure secure and seamless communication between systems. We connect your platform to CRMs, AI models, payment gateways, and analytical tools with effortless harmony.",
+			"Our APIs are designed with precision and foresight, using REST and GraphQL architectures to ensure secure and seamless communication between systems. We connect your platform to CRMs, AI models, payment gateways, and analytical tools with effortless harmony",
 		image:
 			"https://ik.imagekit.io/xp2qigjdg/website-images/api-development.svg?updatedAt=1761237850426",
 	},
@@ -338,7 +347,7 @@ export const services = [
 		shortDescription:
 			"Secure cloud environments with CI/CD, monitoring, backups, and fail-safe deployments.",
 		longDescription:
-			"We build and maintain robust cloud environments using AWS, Vercel, Railway, and Docker. Our DevOps practices ensure security, reliability, and agility, allowing your digital systems to scale gracefully as your ambitions expand.",
+			"We build and maintain robust cloud environments using AWS, Vercel, Railway, and Docker. Our DevOps practices ensure security, reliability, and agility, allowing your digital systems to scale gracefully as your ambitions expand",
 		image:
 			"https://ik.imagekit.io/xp2qigjdg/website-images/devops-cloud.svg?updatedAt=1761237850474",
 	},
@@ -348,7 +357,7 @@ export const services = [
 		shortDescription:
 			"Continuous updates, bug fixes, security patches, and performance improvements.",
 		longDescription:
-			"Our commitment extends beyond deployment. We provide attentive technical support and continuous maintenance to preserve system health, prevent disruptions, and uphold user satisfaction at every moment.",
+			"Our commitment extends beyond deployment. We provide attentive technical support and continuous maintenance to preserve system health, prevent disruptions, and uphold user satisfaction at every moment",
 		image:
 			"https://ik.imagekit.io/xp2qigjdg/website-images/maintenance-technical.svg?updatedAt=1761237850478",
 	},
@@ -358,7 +367,7 @@ export const services = [
 		shortDescription:
 			"Launch a minimum viable product to validate ideas and attract investors.",
 		longDescription:
-			"We guide emerging ventures from concept to prototype with precision and clarity. Our approach focuses on the essential features that validate ideas swiftly, attract investors, and pave the way for full-scale development.",
+			"We guide emerging ventures from concept to prototype with precision and clarity. Our approach focuses on the essential features that validate ideas swiftly, attract investors, and pave the way for full scale development",
 		image:
 			"https://ik.imagekit.io/xp2qigjdg/website-images/startup-mvp.svg?updatedAt=1761237850439",
 	},
@@ -368,7 +377,7 @@ export const services = [
 		shortDescription:
 			"Strategic planning to align technology with business goals and growth.",
 		longDescription:
-			"Every great product begins with vision and strategy. We collaborate closely to define clear objectives, architect scalable solutions, and map a practical path toward successful delivery. Our counsel ensures your technology investments are wise, strategic, and future-ready.",
+			"Every great product begins with vision and strategy. We collaborate closely to define clear objectives, architect scalable solutions, and map a practical path toward successful delivery. Our counsel ensures your technology investments are wise, strategic, and future ready",
 		image:
 			"https://ik.imagekit.io/xp2qigjdg/website-images/consultation-strategy.svg?updatedAt=1761237850501",
 	},

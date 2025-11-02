@@ -14,7 +14,7 @@ export default function Services() {
 
 				<p className="text-xl text-muted-foreground leading-relaxed">
 					From concept to deployment, we deliver software excellence that
-					transforms businesses.
+					transforms businesses
 				</p>
 			</BannerSection>
 			<ServiceListSection />

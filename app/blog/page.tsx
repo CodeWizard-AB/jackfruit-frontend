@@ -12,7 +12,7 @@ export default function Blog() {
 				</h1>
 
 				<p className="text-xl text-muted-foreground leading-relaxed">
-					Insights, trends, and thought leadership from the JackFruit team.
+					Insights, trends, and thought leadership from the JackFruit team
 				</p>
 			</BannerSection>
 			<BlogsSection />

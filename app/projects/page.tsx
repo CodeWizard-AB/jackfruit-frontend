@@ -12,7 +12,7 @@ export default function Projects() {
 				</h1>
 
 				<p className="text-xl text-muted-foreground leading-relaxed">
-					Real projects. Real results. Real impact on businesses like yours.
+					Real projects. Real results. Real impact on businesses like yours
 				</p>
 			</BannerSection>
 			<ProjectListSection />

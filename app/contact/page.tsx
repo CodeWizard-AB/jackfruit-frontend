@@ -11,7 +11,7 @@ export default function Contact() {
 				</h1>
 
 				<p className="text-xl text-muted-foreground leading-relaxed">
-					Have a project in mind? We&apos;d love to hear about it.
+					Have a project in mind? We&apos;d love to hear about it
 				</p>
 			</BannerSection>
 

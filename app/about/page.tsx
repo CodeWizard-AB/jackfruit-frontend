@@ -10,14 +10,14 @@ export default function About() {
 		<Fragment>
 			<BannerSection>
 				<h1 className="text-5xl md:text-7xl font-black tracking-tight leading-none">
-					Driven by <span className="text-primary">Innovation</span>.
+					Driven by <span className="text-primary">Innovation</span>
 					<br />
-					Defined by <span className="text-primary">Excellence</span>.
+					Defined by <span className="text-primary">Excellence</span>
 				</h1>
 				<p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
 					We are a team of passionate engineers, designers, and strategists
-					dedicated to building the future of software.
-				</p>{" "}
+					dedicated to building the future of software
+				</p>
 			</BannerSection>
 			<StorySection />
 			<PhilosophySection />
