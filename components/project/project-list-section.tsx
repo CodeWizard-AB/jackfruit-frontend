@@ -1,6 +1,7 @@
 import { featuredProjects } from "@/lib/content";
 import { Card } from "../ui/card";
 import DynamicImage from "../ui/DynamicImage";
+import Link from "next/link";
 
 export default function ProjectListSection() {
 	return (
@@ -12,11 +13,14 @@ export default function ProjectListSection() {
 						className="hover-elevate active-elevate-2 transition-all duration-300 overflow-hidden md:pl-6 mb-10"
 					>
 						<div className="grid md:grid-cols-2 gap-8">
-							<DynamicImage
-								src={project.imageUrl!}
-								alt={project.title}
-								childClassName="object-top rounded-lg"
-							/>
+							<Link href={project.link}>
+								<DynamicImage
+									src={project.imageUrl!}
+									alt={project.title}
+									childClassName="object-top rounded-lg"
+									containerClassName="w-full h-full"
+								/>
+							</Link>
 
 							<div className="p-8 space-y-6">
 								<div className="space-y-2">

@@ -396,6 +396,7 @@ export const featuredProjects = [
 		tags: ["Sanity CMS", "Event Management", "Headless CMS"],
 		imageUrl:
 			"https://ik.imagekit.io/xp2qigjdg/website-images/awakenationbd.com_.png?updatedAt=1761837030089",
+		link: "https://awakenationbd.com",
 	},
 	{
 		title: "Omnifood Meal Planning Website",
@@ -409,6 +410,7 @@ export const featuredProjects = [
 		tags: ["Health-Tech", "Landing Page Development", "Subscription Service"],
 		imageUrl:
 			"https://ik.imagekit.io/xp2qigjdg/website-images/onmifood-ab.netlify.app_.png?updatedAt=1761994685349",
+		link: "https://onmifood-ab.netlify.app",
 	},
 	{
 		title: "High-Fidelity Productivity SaaS Landing Page",
@@ -422,6 +424,7 @@ export const featuredProjects = [
 		tags: ["SaaS", "UI/UX Design", "Vercel", "Web Development", "Productivity"],
 		imageUrl:
 			"https://ik.imagekit.io/xp2qigjdg/website-images/saas-landing-page-anunay.vercel.app_.png?updatedAt=1761994685032",
+		link: "https://saas-landing-page-anunay.vercel.app",
 	},
 	{
 		title: "LWS XStream Custom Streaming Platform",
@@ -435,6 +438,7 @@ export const featuredProjects = [
 		tags: ["Streaming", "Video Portal", "Frontend Development"],
 		imageUrl:
 			"https://ik.imagekit.io/xp2qigjdg/website-images/x-stream-lws.vercel.app_en.png?updatedAt=1761995336115",
+		link: "https://x-stream-lws.vercel.app",
 	},
 	{
 		title: "LWS MovieDB Discovery Platform",
@@ -448,6 +452,7 @@ export const featuredProjects = [
 		tags: ["API Integration", "The Movie Database (TMDb)", "Web Development"],
 		imageUrl:
 			"https://ik.imagekit.io/xp2qigjdg/website-images/lws-moviedb-three.vercel.app_.png?updatedAt=1761995336118",
+		link: "https://lws-moviedb-three.vercel.app",
 	},
 	{
 		title: "Asterot Football Tournament",
@@ -462,5 +467,6 @@ export const featuredProjects = [
 		tags: ["Sports", "Registration Portal", "Payment Integration"],
 		imageUrl:
 			"https://ik.imagekit.io/xp2qigjdg/website-images/asterot-landing-page.vercel.app_.png?updatedAt=1761995972481",
+		link: "https://asterot-landing-page.vercel.app",
 	},
 ];

@@ -52,7 +52,7 @@ export default function HeroSection() {
 							/>
 						</span>
 					</h1>
-					<p className="mt-6 text-lg">
+					<p className="mt-6 text-lg leading-loose">
 						We are a full spectrum innovation studio helping founders and
 						enterprises build intelligent, scalable, and design driven solutions
 						that transform industries
