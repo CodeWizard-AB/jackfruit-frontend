@@ -118,12 +118,12 @@ export const faq = [
 			"Yes, we have specialized expertise in artificial intelligence and automation. We can enhance your existing software with intelligent features or design entirely new systems that use AI to improve performance, decision making, and user experience.",
 	},
 	{
-		question: "How can I start working with JackFruit Company?",
+		question: "How can I start working with JackFruit?",
 		answer:
 			"Starting with us is simple. Schedule a consultation through our website. Our team will conduct a discovery session to understand your goals and requirements. We will provide a detailed proposal with the project scope, timeline, and investment breakdown. Once approved, we begin the design, development, and implementation process with regular updates at every stage.",
 	},
 	{
-		question: "Where is JackFruit Company located?",
+		question: "Where is JackFruit located?",
 		answer:
 			"Our headquarters are located at 353 Kearny Street, San Francisco, California 94108. We proudly collaborate with clients across the globe through our digital communication and project management systems, ensuring seamless coordination regardless of location.",
 	},

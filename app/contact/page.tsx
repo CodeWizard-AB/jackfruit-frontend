@@ -1,5 +1,4 @@
 import ContactSection from "@/components/contact/contact-seciton";
-import BannerSection from "@/components/sections/banner-section";
 import { AnimatedShinyText } from "@/components/ui/animated-shiny-text";
 import { BorderBeam } from "@/components/ui/border-beam";
 import { Button } from "@/components/ui/button";
@@ -12,7 +11,7 @@ import { Fragment } from "react";
 export default function Contact() {
 	return (
 		<Fragment>
-			<section className="flex items-center justify-center overflow-hidden py-10 pt-30 relative">
+			<section className="flex items-center justify-center overflow-hidden pt-30 relative">
 				<GridPattern
 					width={60}
 					height={60}

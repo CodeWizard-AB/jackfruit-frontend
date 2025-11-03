@@ -10,19 +10,19 @@ export default function ProjectListSection() {
 				{featuredProjects.map((project, index) => (
 					<Card
 						key={index}
-						className="hover-elevate active-elevate-2 transition-all duration-300 overflow-hidden md:pl-6 mb-10"
+						className="hover-elevate active-elevate-2 transition-all duration-300 overflow-hidden mb-10 p-6"
 					>
-						<div className="grid md:grid-cols-2 gap-8">
+						<div className="grid md:grid-cols-2 gap-16 md:gap-8 2xl:gap-16">
 							<Link href={project.link}>
 								<DynamicImage
 									src={project.imageUrl!}
 									alt={project.title}
 									childClassName="object-top rounded-lg"
-									containerClassName="w-full h-full"
+									containerClassName="w-full h-full min-h-96"
 								/>
 							</Link>
 
-							<div className="p-8 space-y-6">
+							<div className="sm:py-8 space-y-6">
 								<div className="space-y-2">
 									<h3 className="text-3xl font-bold">{project.title}</h3>
 									<p className="text-lg text-muted-foreground">

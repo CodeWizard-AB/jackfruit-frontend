@@ -12,7 +12,11 @@ import { usePathname } from "next/navigation";
 import { ComponentProps } from "react";
 import { Sheet, SheetClose } from "../ui/sheet";
 
-export default function NavMenu(props: ComponentProps<typeof NavigationMenu>) {
+interface NavMenuProps extends ComponentProps<typeof NavigationMenu> {
+	isMobileMenu?: boolean;
+}
+
+export default function NavMenu({ isMobileMenu, ...props }: NavMenuProps) {
 	const pathname = usePathname();
 
 	return (
@@ -21,24 +25,34 @@ export default function NavMenu(props: ComponentProps<typeof NavigationMenu>) {
 				{navItems.map((item) => (
 					<NavigationMenuItem key={item.name}>
 						<NavigationMenuLink asChild>
-							<Sheet>
+							{isMobileMenu ? (
 								<SheetClose asChild>
-									<Link
-										href={item.link}
-										className={`${
-											pathname === item.link
-												? "text-primary hover:text-primary focus:text-primary active:text-primary"
-												: ""
-										}`}
-									>
-										{item.name}
-									</Link>
+									<LinkContent link={item.link} name={item.name} />
 								</SheetClose>
-							</Sheet>
+							) : (
+								<LinkContent link={item.link} name={item.name} />
+							)}
 						</NavigationMenuLink>
 					</NavigationMenuItem>
 				))}
 			</NavigationMenuList>
 		</NavigationMenu>
+	);
+}
+
+function LinkContent({ link, name }: { link: string; name: string }) {
+	const pathname = usePathname();
+
+	return (
+		<Link
+			href={link}
+			className={`${
+				pathname === link
+					? "text-primary hover:text-primary focus:text-primary active:text-primary"
+					: ""
+			}`}
+		>
+			{name}
+		</Link>
 	);
 }

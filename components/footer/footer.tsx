@@ -13,7 +13,7 @@ export default function Footer() {
 	return (
 		<footer>
 			<div className="container">
-				<div className="pb-12 pt-20 flex flex-col justify-start items-center">
+				<div className="pb-12 pt-20 flex flex-col sm:justify-start items-center">
 					{/* Logo */}
 					<Logo />
 
