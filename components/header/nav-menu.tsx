@@ -17,8 +17,6 @@ interface NavMenuProps extends ComponentProps<typeof NavigationMenu> {
 }
 
 export default function NavMenu({ isMobileMenu, ...props }: NavMenuProps) {
-	const pathname = usePathname();
-
 	return (
 		<NavigationMenu {...props}>
 			<NavigationMenuList className="gap-8 space-x-0 data-[orientation=vertical]:flex-col data-[orientation=vertical]:items-start data-[orientation=vertical]:justify-start">
