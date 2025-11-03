@@ -5,7 +5,6 @@ import { cn } from "@/lib/utils";
 import { Spotlight } from "../ui/spotlight";
 import { AnimatedShinyText } from "../ui/animated-shiny-text";
 import { Highlighter } from "../ui/highlighter";
-import { Separator } from "../ui/separator";
 import { BorderBeam } from "../ui/border-beam";
 import { LayoutTextFlip } from "../ui/layout-text-flip";
 import Link from "next/link";

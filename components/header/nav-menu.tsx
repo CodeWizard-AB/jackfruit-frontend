@@ -10,7 +10,7 @@ import { navItems } from "@/lib/content";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ComponentProps } from "react";
-import { Sheet, SheetClose } from "../ui/sheet";
+import { SheetClose } from "../ui/sheet";
 
 interface NavMenuProps extends ComponentProps<typeof NavigationMenu> {
 	isMobileMenu?: boolean;
