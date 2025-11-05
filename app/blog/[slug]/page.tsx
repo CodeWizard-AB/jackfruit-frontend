@@ -2,7 +2,14 @@ import BannerSection from "@/components/sections/banner-section";
 import DynamicImage from "@/components/ui/DynamicImage";
 import { clientContentful } from "@/lib/contentful";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
-import { Document, BLOCKS, MARKS, INLINES } from "@contentful/rich-text-types";
+import {
+	Document,
+	BLOCKS,
+	MARKS,
+	INLINES,
+	type Block,
+	type Inline,
+} from "@contentful/rich-text-types";
 import type { BlogEntry } from "@/types/contentful";
 import { Asset } from "contentful";
 import { Separator } from "@/components/ui/separator";
@@ -28,89 +35,103 @@ const richTextOptions = {
 		),
 	},
 	renderNode: {
-		[BLOCKS.PARAGRAPH]: (_node: any, children: React.ReactNode) => (
+		[BLOCKS.PARAGRAPH]: (_node: Block | Inline, children: React.ReactNode) => (
 			<p className="mb-6 text-foreground/90 leading-loose tracking-wide">
 				{children}
 			</p>
 		),
-		[BLOCKS.HEADING_1]: (_node: any, children: React.ReactNode) => (
+		[BLOCKS.HEADING_1]: (_node: Block | Inline, children: React.ReactNode) => (
 			<h1 className="text-4xl font-bold mb-6 mt-10 text-foreground">
 				{children}
 			</h1>
 		),
-		[BLOCKS.HEADING_2]: (_node: any, children: React.ReactNode) => (
+		[BLOCKS.HEADING_2]: (_node: Block | Inline, children: React.ReactNode) => (
 			<h2 className="text-3xl font-bold mb-5 mt-9 text-foreground">
 				{children}
 			</h2>
 		),
-		[BLOCKS.HEADING_3]: (_node: any, children: React.ReactNode) => (
+		[BLOCKS.HEADING_3]: (_node: Block | Inline, children: React.ReactNode) => (
 			<h3 className="text-2xl font-semibold mb-4 mt-8 text-foreground">
 				{children}
 			</h3>
 		),
-		[BLOCKS.HEADING_4]: (_node: any, children: React.ReactNode) => (
+		[BLOCKS.HEADING_4]: (_node: Block | Inline, children: React.ReactNode) => (
 			<h4 className="text-xl font-semibold mb-3 mt-7 text-foreground">
 				{children}
 			</h4>
 		),
-		[BLOCKS.HEADING_5]: (_node: any, children: React.ReactNode) => (
+		[BLOCKS.HEADING_5]: (_node: Block | Inline, children: React.ReactNode) => (
 			<h5 className="text-lg font-semibold mb-3 mt-6 text-foreground">
 				{children}
 			</h5>
 		),
-		[BLOCKS.HEADING_6]: (_node: any, children: React.ReactNode) => (
+		[BLOCKS.HEADING_6]: (_node: Block | Inline, children: React.ReactNode) => (
 			<h6 className="text-base font-semibold mb-2 mt-5 text-foreground">
 				{children}
 			</h6>
 		),
-		[BLOCKS.UL_LIST]: (_node: any, children: React.ReactNode) => (
+		[BLOCKS.UL_LIST]: (_node: Block | Inline, children: React.ReactNode) => (
 			<ul className="list-disc list-inside mb-6 space-y-2 ml-4">{children}</ul>
 		),
-		[BLOCKS.OL_LIST]: (_node: any, children: React.ReactNode) => (
+		[BLOCKS.OL_LIST]: (_node: Block | Inline, children: React.ReactNode) => (
 			<ol className="list-decimal list-inside mb-6 space-y-2 ml-4">
 				{children}
 			</ol>
 		),
-		[BLOCKS.LIST_ITEM]: (_node: any, children: React.ReactNode) => (
+		[BLOCKS.LIST_ITEM]: (_node: Block | Inline, children: React.ReactNode) => (
 			<li className="text-foreground/90 leading-7">{children}</li>
 		),
-		[BLOCKS.QUOTE]: (_node: any, children: React.ReactNode) => (
+		[BLOCKS.QUOTE]: (_node: Block | Inline, children: React.ReactNode) => (
 			<blockquote className="border-l-4 border-primary pl-6 py-4 my-6 italic text-foreground/80 bg-muted/50 rounded-r-lg">
 				{children}
 			</blockquote>
 		),
 		[BLOCKS.HR]: () => <Separator className="my-8" />,
-		[BLOCKS.EMBEDDED_ASSET]: (node: any) => {
-			const { file, title } = node.data.target.fields;
-			if (file?.contentType?.startsWith("image/") && file?.url) {
-				return (
-					<figure className="my-8">
-						<DynamicImage
-							src={`https:${file.url}`}
-							alt={title ? String(title) : ""}
-							containerClassName="w-full rounded-lg overflow-hidden"
-							childClassName="object-cover"
-						/>
-						{title && (
-							<figcaption className="text-sm text-muted-foreground mt-2 text-center">
-								{String(title)}
-							</figcaption>
-						)}
-					</figure>
-				);
+		[BLOCKS.EMBEDDED_ASSET]: (node: Block | Inline) => {
+			if (
+				"data" in node &&
+				"target" in node.data &&
+				"fields" in node.data.target
+			) {
+				const { file, title } = node.data.target.fields as {
+					file?: { contentType?: string; url?: string };
+					title?: string;
+				};
+				if (file?.contentType?.startsWith("image/") && file?.url) {
+					return (
+						<figure className="my-8">
+							<DynamicImage
+								src={`https:${file.url}`}
+								alt={title ? String(title) : ""}
+								containerClassName="w-full rounded-lg overflow-hidden"
+								childClassName="object-cover"
+							/>
+							{title && (
+								<figcaption className="text-sm text-muted-foreground mt-2 text-center">
+									{String(title)}
+								</figcaption>
+							)}
+						</figure>
+					);
+				}
 			}
 			return null;
 		},
-		[INLINES.HYPERLINK]: (node: any, children: React.ReactNode) => (
-			<Link
-				href={node.data.uri}
-				target="_blank"
-				rel="noopener noreferrer"
-				className="text-primary hover:underline font-medium"
-			>
-				{children}
-			</Link>
-		),
+		[INLINES.HYPERLINK]: (node: Block | Inline, children: React.ReactNode) => {
+			if ("data" in node && "uri" in node.data) {
+				return (
+					<Link
+						href={node.data.uri as string}
+						target="_blank"
+						rel="noopener noreferrer"
+						className="text-primary hover:underline font-medium"
+					>
+						{children}
+					</Link>
+				);
+			}
+			return <>{children}</>;
+		},
 	},
 };
 
