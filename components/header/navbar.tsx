@@ -45,7 +45,7 @@ export default function Navbar() {
 						<div className="md:hidden">
 							<NavigationSheet />
 						</div>
-					</div>
+					</div>	
 				</div>
 			</nav>
 		</header>

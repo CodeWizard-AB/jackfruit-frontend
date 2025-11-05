@@ -1,19 +1,14 @@
 import { Separator } from "@/components/ui/separator";
-import {
-	DribbbleIcon,
-	GithubIcon,
-	TwitchIcon,
-	TwitterIcon,
-} from "lucide-react";
 import Link from "next/link";
 import Logo from "../header/logo";
 import { navItems } from "@/lib/content";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
 	return (
 		<footer>
 			<div className="container">
-				<div className="pb-12 pt-20 flex flex-col sm:justify-start items-center">
+				<div className="pb-12 flex flex-col sm:justify-start items-center">
 					{/* Logo */}
 					<Logo />
 
@@ -42,17 +37,11 @@ export default function Footer() {
 					</span>
 
 					<div className="flex items-center gap-5 text-muted-foreground">
-						<Link href="#" target="_blank">
-							<TwitterIcon className="h-5 w-5" />
+						<Link href={"/"}>
+							<FaFacebook size={25} />
 						</Link>
-						<Link href="#" target="_blank">
-							<DribbbleIcon className="h-5 w-5" />
-						</Link>
-						<Link href="#" target="_blank">
-							<TwitchIcon className="h-5 w-5" />
-						</Link>
-						<Link href="#" target="_blank">
-							<GithubIcon className="h-5 w-5" />
+						<Link href={"/"}>
+							<FaInstagram size={25} />
 						</Link>
 					</div>
 				</div>
