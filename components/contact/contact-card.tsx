@@ -17,8 +17,8 @@ export default function ContactCard({
 	details,
 }: ContactCardProps) {
 	return (
-		<div>
-			<div className="h-12 w-12 flex items-center justify-center bg-primary/5 dark:bg-primary/10 text-primary rounded-full">
+		<div className="text-center sm:text-left">
+			<div className="h-12 w-12 flex items-center mx-auto sm:mx-0 justify-center bg-primary/5 dark:bg-primary/10 text-primary rounded-full">
 				<Icon />
 			</div>
 			<h3 className="mt-6 font-semibold text-xl">{title}</h3>

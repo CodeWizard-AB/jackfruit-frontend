@@ -1,12 +1,17 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import Logo from "./logo";
 import NavMenu from "./nav-menu";
+import { useState } from "react";
 
 export default function NavigationSheet() {
+	const [open, setOpen] = useState(false);
+
 	return (
-		<Sheet>
+		<Sheet open={open} onOpenChange={setOpen}>
 			<SheetTrigger asChild>
 				<Button variant="outline" size="icon">
 					<Menu />
@@ -17,7 +22,7 @@ export default function NavigationSheet() {
 				<NavMenu
 					orientation="vertical"
 					className="[&>div]:h-full"
-					isMobileMenu={true}
+					onLinkClick={() => setOpen(false)}
 				/>
 			</SheetContent>
 		</Sheet>

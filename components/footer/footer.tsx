@@ -8,11 +8,11 @@ export default function Footer() {
 	return (
 		<footer>
 			<div className="container">
-				<div className="pb-12 flex flex-col sm:justify-start items-center">
+				<div className="py-12 flex flex-col items-center">
 					{/* Logo */}
 					<Logo />
 
-					<ul className="flex items-center gap-4 flex-wrap">
+					<ul className="flex items-center justify-center flex-wrap gap-4">
 						{navItems.map(({ name, link }) => (
 							<li key={name}>
 								<Link

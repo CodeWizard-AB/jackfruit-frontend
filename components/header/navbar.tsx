@@ -33,7 +33,7 @@ export default function Navbar() {
 				<div className="h-full flex items-center justify-between mx-auto">
 					<Logo />
 					{/* Desktop Menu */}
-					<NavMenu className="hidden md:block" isMobileMenu={false} />
+					<NavMenu className="hidden md:block" />
 					<div className="flex items-center gap-3">
 						<Link
 							href={"https://calendly.com/jackfruit-1ech/30min"}

@@ -15,59 +15,57 @@ export default function TechSection() {
 				description="Built with industry-leading technologies"
 			/>
 			<div className="grid lg:items-center lg:justify-center lg:grid-cols-2 grid-cols-1 lg:gap-12">
-				<CometCard>
-					<div className="relative rounded-xl w-full overflow-hidden">
-						<BorderBeam
-							size={500}
-							className="from-transparent via-primary to-transparent"
-						/>
-						<Terminal>
-							<TypingAnimation>
-								&gt; Initializing JackFruit Environment...
-							</TypingAnimation>
-							<AnimatedSpan className="text-green-500">
-								✔ System check complete — all dependencies stable.
-							</AnimatedSpan>
-							<AnimatedSpan className="text-green-500">
-								✔ Framework verified — Next.js detected.
-							</AnimatedSpan>
-							<AnimatedSpan className="text-green-500">
-								✔ Tailwind CSS configuration confirmed.
-							</AnimatedSpan>
-							<AnimatedSpan className="text-green-500">
-								✔ Shadcn UI components integrated successfully.
-							</AnimatedSpan>
-							<AnimatedSpan className="text-green-500">
-								✔ Performance modules optimized for production.
-							</AnimatedSpan>
-							<AnimatedSpan className="text-green-500">
-								✔ Performance modules optimized for production.
-							</AnimatedSpan>
-							<AnimatedSpan className="text-green-500">
-								✔ Updating tailwind.config.ts
-							</AnimatedSpan>
-							<AnimatedSpan className="text-green-500">
-								✔ Updating app/globals.css
-							</AnimatedSpan>
-							<AnimatedSpan className="text-green-500">
-								✔ Installing dependencies.
-							</AnimatedSpan>
-							<AnimatedSpan className="text-blue-500">
-								↳ Generated core file:{" "}
-								<span className="pl-2">/lib/system/utils.ts</span>
-							</AnimatedSpan>
-							<AnimatedSpan className="text-blue-500">
-								↳ Compiling dynamic interfaces and design tokens...
-							</AnimatedSpan>
-							<TypingAnimation className="text-muted-foreground">
-								🚀 JackFruit Core initialized successfully.
-							</TypingAnimation>
-							<TypingAnimation className="text-muted-foreground">
-								You may now build something extraordinary.
-							</TypingAnimation>
-						</Terminal>
-					</div>
-				</CometCard>
+				<div className="relative rounded-xl w-full overflow-hidden">
+					<BorderBeam
+						size={500}
+						className="from-transparent via-primary to-transparent"
+					/>
+					<Terminal>
+						<TypingAnimation>
+							&gt; Initializing JackFruit Environment...
+						</TypingAnimation>
+						<AnimatedSpan className="text-green-500">
+							✔ System check complete — all dependencies stable.
+						</AnimatedSpan>
+						<AnimatedSpan className="text-green-500">
+							✔ Framework verified — Next.js detected.
+						</AnimatedSpan>
+						<AnimatedSpan className="text-green-500">
+							✔ Tailwind CSS configuration confirmed.
+						</AnimatedSpan>
+						<AnimatedSpan className="text-green-500">
+							✔ Shadcn UI components integrated successfully.
+						</AnimatedSpan>
+						<AnimatedSpan className="text-green-500">
+							✔ Performance modules optimized for production.
+						</AnimatedSpan>
+						<AnimatedSpan className="text-green-500">
+							✔ Performance modules optimized for production.
+						</AnimatedSpan>
+						<AnimatedSpan className="text-green-500">
+							✔ Updating tailwind.config.ts
+						</AnimatedSpan>
+						<AnimatedSpan className="text-green-500">
+							✔ Updating app/globals.css
+						</AnimatedSpan>
+						<AnimatedSpan className="text-green-500">
+							✔ Installing dependencies.
+						</AnimatedSpan>
+						<AnimatedSpan className="text-blue-500">
+							↳ Generated core file:{" "}
+							<span className="pl-2">/lib/system/utils.ts</span>
+						</AnimatedSpan>
+						<AnimatedSpan className="text-blue-500">
+							↳ Compiling dynamic interfaces and design tokens...
+						</AnimatedSpan>
+						<TypingAnimation className="text-muted-foreground">
+							🚀 JackFruit Core initialized successfully.
+						</TypingAnimation>
+						<TypingAnimation className="text-muted-foreground">
+							You may now build something extraordinary.
+						</TypingAnimation>
+					</Terminal>
+				</div>
 
 				<div className="mt-6 [mask-image:linear-gradient(to_right,transparent,#030712_10%,#030712_90%,black,transparent)]">
 					<Marquee pauseOnHover className="[--duration:30s]">

@@ -11,44 +11,33 @@ import { ComponentProps } from "react";
 import { SheetClose } from "../ui/sheet";
 
 interface NavMenuProps extends ComponentProps<typeof NavigationMenu> {
-	isMobileMenu?: boolean;
+	onLinkClick?: () => void;
 }
 
-export default function NavMenu({ isMobileMenu, ...props }: NavMenuProps) {
+export default function NavMenu({ onLinkClick, ...props }: NavMenuProps) {
+	const pathname = usePathname();
+
 	return (
 		<NavigationMenu {...props}>
 			<NavigationMenuList className="gap-8 space-x-0 data-[orientation=vertical]:flex-col data-[orientation=vertical]:items-start data-[orientation=vertical]:justify-start">
 				{navItems.map((item) => (
 					<NavigationMenuItem key={item.name}>
 						<NavigationMenuLink asChild>
-							{isMobileMenu ? (
-								<SheetClose asChild>
-									<LinkContent link={item.link} name={item.name} />
-								</SheetClose>
-							) : (
-								<LinkContent link={item.link} name={item.name} />
-							)}
+							<Link
+								href={item.link}
+								className={`${
+									pathname === item.link
+										? "text-primary hover:text-primary focus:text-primary active:text-primary"
+										: ""
+								}`}
+								onClick={onLinkClick}
+							>
+								{item.name}
+							</Link>
 						</NavigationMenuLink>
 					</NavigationMenuItem>
 				))}
 			</NavigationMenuList>
 		</NavigationMenu>
-	);
-}
-
-function LinkContent({ link, name }: { link: string; name: string }) {
-	const pathname = usePathname();
-
-	return (
-		<Link
-			href={link}
-			className={`${
-				pathname === link
-					? "text-primary hover:text-primary focus:text-primary active:text-primary"
-					: ""
-			}`}
-		>
-			{name}
-		</Link>
 	);
 }
