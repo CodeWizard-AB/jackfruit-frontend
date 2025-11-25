@@ -4,6 +4,13 @@ import TeamSection from "@/components/about/team-section";
 import CTASection from "@/components/sections/cta-section";
 import BannerSection from "@/components/sections/banner-section";
 import { Fragment } from "react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "JACKFRUIT | A Legacy of Imagination and Distinction",
+	description:
+		"Discover how JACKFRUIT weaves creativity, precision, and ambition to craft experiences that are as remarkable as they are timeless.",
+};
 
 export default function About() {
 	return (

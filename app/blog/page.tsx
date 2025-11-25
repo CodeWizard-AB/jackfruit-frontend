@@ -1,7 +1,14 @@
 import BlogsSection from "@/components/blog/blogs-section";
 import BannerSection from "@/components/sections/banner-section";
 import CTASection from "@/components/sections/cta-section";
+import type { Metadata } from "next";
 import { Fragment } from "react";
+
+export const metadata: Metadata = {
+	title: "Tales of Vision, Craft, and Innovation",
+	description:
+		"Explore the JACKFRUIT blog to uncover stories of ingenuity, innovative ideas, and the artistry behind digital transformation.",
+};
 
 export default function Blog() {
 	return (

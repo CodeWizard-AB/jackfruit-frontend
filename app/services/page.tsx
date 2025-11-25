@@ -1,6 +1,13 @@
 import BannerSection from "@/components/sections/banner-section";
 import ServiceListSection from "@/components/services/services-list-section";
+import type { Metadata } from "next";
 import { Fragment } from "react";
+
+export const metadata: Metadata = {
+	title: "JACKFRUIT | Turning Concepts into Majestic Realities",
+	description:
+		"Collaborate with JACKFRUIT to elevate ideas into refined experiences, where artistry, strategy, and imagination converge flawlessly.",
+};
 
 export default function Services() {
 	return (

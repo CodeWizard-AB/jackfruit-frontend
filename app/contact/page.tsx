@@ -5,8 +5,15 @@ import { Button } from "@/components/ui/button";
 import { GridPattern } from "@/components/ui/grid-pattern";
 import { cn } from "@/lib/utils";
 import { ArrowUpRight } from "lucide-react";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Fragment } from "react";
+
+export const metadata: Metadata = {
+	title: "JACKFRUIT | Begin Your Journey with Our Team",
+	description:
+		"Connect with JACKFRUIT to explore bold collaborations and transform ideas into sophisticated, unforgettable digital experiences.",
+};
 
 export default function Contact() {
 	return (
