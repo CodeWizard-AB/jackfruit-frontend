@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import { Fragment } from "react";
 
 export const metadata: Metadata = {
-	title: "Tales of Vision, Craft, and Innovation",
+	title: "JACKFRUIT | Tales of Vision, Craft, and Innovation",
 	description:
 		"Explore the JACKFRUIT blog to uncover stories of ingenuity, innovative ideas, and the artistry behind digital transformation.",
 };
