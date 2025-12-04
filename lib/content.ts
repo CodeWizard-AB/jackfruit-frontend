@@ -470,3 +470,36 @@ export const featuredProjects = [
 		link: "https://asterot-landing-page.vercel.app",
 	},
 ];
+
+export const coreMembers = [
+	{
+		role: "Cheif Executive Officer",
+		name: "Abir Boksh Shah (CEO)",
+		photo:
+			"https://ik.imagekit.io/xp2qigjdg/website-images/abir-web.jpeg?updatedAt=1764866528896",
+		email: "abir@jackfruit.tech",
+		linkedin: "https://www.linkedin.com/in/abir-shah-b93328286",
+	},
+	{
+		role: "Cheif Technology Officer",
+		name: "Anunay Argha (CTO)",
+		photo: "https://ik.imagekit.io/xp2qigjdg/website-images/anunay-web.jpeg",
+		email: "anunay@jackfruit.tech",
+		linkedin: "https://www.linkedin.com/in/anunayargha",
+	},
+	{
+		role: "Chief Financial Officer",
+		name: "Mustafa Abrar Zaman (CFO)",
+		photo:
+			"https://ik.imagekit.io/xp2qigjdg/website-images/abrar-web.jpeg?updatedAt=1764861804249",
+		email: "abrar@jackfruit.tech",
+		linkedin: "https://www.linkedin.com/in/mustafa-abrar-zaman-34292a211",
+	},
+	{
+		role: "Chief Marketing Officer",
+		name: "Mahir Junaed (CMO)",
+		photo: "https://ik.imagekit.io/xp2qigjdg/website-images/mahir-web.jpeg",
+		email: "mahir@jackfruit.tech",
+		linkedin: "https://www.linkedin.com/in/mahir-junaed-829302256",
+	},
+];

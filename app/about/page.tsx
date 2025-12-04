@@ -5,6 +5,7 @@ import CTASection from "@/components/sections/cta-section";
 import BannerSection from "@/components/sections/banner-section";
 import { Fragment } from "react";
 import type { Metadata } from "next";
+import TeamMemberSection from "@/components/about/team-member-section";
 
 export const metadata: Metadata = {
 	title: "JACKFRUIT | A Legacy of Imagination and Distinction",
@@ -27,6 +28,7 @@ export default function About() {
 				</p>
 			</BannerSection>
 			<StorySection />
+			<TeamMemberSection />
 			<PhilosophySection />
 			<TeamSection />
 			<CTASection />
